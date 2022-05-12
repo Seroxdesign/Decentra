@@ -1,0 +1,87 @@
+@media screen and (min-width: 786px) {
+  .logo{
+    background-color: white;
+    height: 10vh;
+    border-radius: 50px;
+  }
+  
+  .main{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 720px 300px;
+    width: 1048px;
+    margin: auto;
+    grid-gap: 28px;
+    padding-right: 5vw;
+  }
+  .left_main {
+  padding-top: 1em;
+  }
+  
+  .main_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-row-gap: 28px;
+  }
+  
+  .link_block{
+    height: 30vh;
+    width: 100%;
+    background-color: #272522;
+    padding: 1em;
+  }
+  
+  .link_block_create{
+    border: 2px solid rgba(211, 211, 211, 0.269); 
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wallet{
+    position: fixed;
+    right: 0;
+    top: 0;
+  }
+}
+
+
+@media screen and (max-width: 786px) {
+  .main{
+    height: 90vh;
+    overflow-y: scroll;
+  }
+
+  .main_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    grid-row-gap: 22.5px;
+    max-height: 100vh;
+    padding: 0.5em;
+    padding-bottom: 1em;
+    border: 2px solid red;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+  }
+  
+  .long_block{
+    position: absolute;
+    background-color: #272522;
+    padding: 1em;
+    border-radius: 25px 25px 0px 0px;
+    min-height: 100%;
+    z-index: 100;
+    margin-top: 100%;
+  
+    hr{
+      margin-top: 1em;
+      border: none;
+      height: 1.35px;
+      background: #3d3b39;
+    }    
+  }
+}

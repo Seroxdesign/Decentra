@@ -1,0 +1,21 @@
+.input_container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  
+  label{
+    color: lightgray;
+    margin-top: 1em;
+  } 
+
+  input{
+    margin-top: 0.5em;
+    color: white;
+    padding: 0.5em;
+    min-height: 50px;
+    background-color: #222121;
+    border: 1px solid #3D3B39;
+    border-radius: 7.5px;
+    padding-left: 1em;
+  }
+}

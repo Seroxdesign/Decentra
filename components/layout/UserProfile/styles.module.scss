@@ -1,0 +1,186 @@
+@import '../../../theme/variables.scss';
+
+@media screen and (min-width: 786px) {
+
+
+  .profile{
+    display: flex;
+    flex-direction: column; 
+    min-height: 30vh;
+    color: white;
+    background-color: #272522;
+    border-radius: 12px;
+    
+    .banner{
+      width: 100%;
+      height: 100%;
+
+      img{
+        height: 100%;
+        min-height: 20vh;
+        min-width: 1048px;
+        border-radius: 12px 12px 0px 0px;
+        margin-top: -2%;
+      }
+    }
+
+    p{
+      margin-top: 0.3em;
+      color: rgba(255, 255, 255, 0.597);
+    }
+
+    .circularImg{
+      border-radius: 50%;
+      width: 20vh;
+      margin-bottom: 2em;
+      position: relative;
+      top: -10vh;
+      left: 5%;
+      border: 5px solid #303030;
+    }
+
+  }
+
+  .profileGrid{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    main{
+      margin-top: -7%;
+      padding: 2em;
+      padding-top: 0;
+    }
+
+    aside{
+      padding: 2em;      
+    }
+
+    a{
+      color: white;
+    }
+  }
+
+  .toolbar{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    padding-bottom: 2em;
+    button{
+      height: 40px;
+      width: 100px;
+      margin-right: 1em;
+      background-color: #272522;
+      border: 2px solid white;
+      color: white;
+      border-radius: 12px; 
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #141414;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .main_grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    
+  }
+
+  .profile{
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100%;
+    color: white;
+    background-color:  #2E2B29;
+
+    .banner{
+      width: 100%;
+      height: 100%;
+
+      img{
+        min-width: 100vw;
+        width: 100vw;
+      }
+    }
+
+    p{
+      color: rgba(255, 255, 255, 0.597);
+    }
+  }
+
+  .profileGrid{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    main{
+     
+      padding: 1em;
+      padding-top: 0;
+    }
+
+    aside{
+      padding: 2em;      
+    }
+
+    a{
+      color: white;
+      display: none;
+    }
+  }
+
+  .toolbar{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    padding-bottom: 2em;
+  
+    button{
+      height: 40px;
+      width: auto;
+      margin-right: 1em;
+      padding: 0 12px;
+      background-color: #272522;
+      border: 2px solid white;
+      color: white;
+      border-radius: 12px; 
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:hover{
+        background-color: #141414;
+      }
+    }
+  }
+
+  .pfp{
+    img{
+      max-width: 50vw;
+      max-height: 50vw;
+      width: 15vh;
+      height: 15vh;
+      margin-left: 1em;
+      margin-top: -8vh;
+      border: 5px solid #2E2B29;
+      border-radius: 12px;
+    }
+  }
+
+  .bio{
+    margin-left: 1em;
+    width: 90%;
+    margin-bottom: 1.5em;
+  }
+  
+}
+

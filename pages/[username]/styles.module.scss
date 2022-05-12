@@ -1,0 +1,31 @@
+@media screen and (min-width: 786px) {
+  .container{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main{
+    padding-top: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 1048px;
+    margin: auto;
+    grid-gap: 28px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+    
+  .main_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+    grid-row-gap: 28px;
+  }
+}
+

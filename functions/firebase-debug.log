@@ -1,0 +1,171 @@
+[debug] [2022-04-07T16:39:47.884Z] ----------------------------------------------------------------------
+[debug] [2022-04-07T16:39:47.886Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\cherf\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2022-04-07T16:39:47.886Z] CLI Version:   10.6.0
+[debug] [2022-04-07T16:39:47.886Z] Platform:      win32
+[debug] [2022-04-07T16:39:47.886Z] Node Version:  v14.17.4
+[debug] [2022-04-07T16:39:47.887Z] Time:          Thu Apr 07 2022 12:39:47 GMT-0400 (Eastern Daylight Time)
+[debug] [2022-04-07T16:39:47.887Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-04-07T16:39:47.940Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-04-07T16:39:47.940Z] > authorizing via signed-in user (cherfaskylar@gmail.com)
+[debug] [2022-04-07T16:39:47.940Z] [iam] checking project metrodao-5f654 for permissions ["firebase.projects.get"]
+[debug] [2022-04-07T16:39:47.942Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/metrodao-5f654:testIamPermissions [none]
+[debug] [2022-04-07T16:39:47.942Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/metrodao-5f654:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2022-04-07T16:39:48.213Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/metrodao-5f654:testIamPermissions 200
+[debug] [2022-04-07T16:39:48.213Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/metrodao-5f654:testIamPermissions {"permissions":["firebase.projects.get"]}
+[warn] !  Your requested "node" version "10" doesn't match your global version "14". Using node@14 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Your requested \"node\" version \"10\" doesn't match your global version \"14\". Using node@14 from host."}}
+[debug] [2022-04-07T16:39:48.227Z] defaultcredentials: writing to file C:\Users\cherf\AppData\Roaming\firebase\cherfaskylar_gmail_com_application_default_credentials.json
+[debug] [2022-04-07T16:39:48.229Z] DEBUG: Setting GAC to C:\Users\cherf\AppData\Roaming\firebase\cherfaskylar_gmail_com_application_default_credentials.json
+[debug] [2022-04-07T16:39:48.229Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/metrodao-5f654/adminSdkConfig [none]
+[debug] [2022-04-07T16:39:48.509Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/metrodao-5f654/adminSdkConfig 200
+[debug] [2022-04-07T16:39:48.509Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/metrodao-5f654/adminSdkConfig {"projectId":"metrodao-5f654","storageBucket":"metrodao-5f654.appspot.com","locationId":"us-central"}
+[debug] [2022-04-07T16:39:48.519Z] [functions] Watching "C:\Users\cherf\projects\metrodao\functions" for Cloud Functions...
+[debug] [2022-04-07T16:39:48.523Z] Validating nodejs source
+[debug] [2022-04-07T16:39:50.324Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.20.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-04-07T16:39:50.324Z] Building nodejs source
+[debug] [2022-04-07T16:39:50.324Z] Analyzing nodejs backend spec
+[debug] [2022-04-07T16:39:50.492Z] [functions[us-central1-basicHTTP]] http function initialized (http://localhost:5000/metrodao-5f654/us-central1/basicHTTP).
+[debug] [2022-04-07T16:39:50.493Z] [functions[us-central1-surveyCount]] function ignored because the firestore emulator does not exist or is not running.
+[info] i  functions: Loaded functions: basicHTTP, surveyCount 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2022-04-07T16:40:00.654Z] shell:surveyCount: trigger={"entryPoint":"surveyCount","platform":"gcfv1","region":"us-central1","name":"surveyCount","id":"us-central1-surveyCount","eventTrigger":{"eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/metrodao-5f654/databases/(default)/documents/users/{userId}/communitySurveyResults"}}
+[debug] [2022-04-07T16:40:00.655Z] shell:surveyCount: opts={"resource":"projects/metrodao-5f654/databases/(default)/documents/users/userId4/communitySurveyResults"}, data={"value":{},"oldValue":{}}
+[debug] [2022-04-07T16:40:00.664Z] DEBUG: [worker-pool] addWorker(us-central1-surveyCount)
+[debug] [2022-04-07T16:40:00.664Z] DEBUG: [worker-pool] Adding worker with key us-central1-surveyCount, total=1
+[debug] [2022-04-07T16:40:00.664Z] DEBUG: [worker-pool] submitWork(triggerId=us-central1-surveyCount)
+[debug] [2022-04-07T16:40:00.665Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: Assigning socketPath: \\?\pipe\C:\Users\cherf\projects\metrodao\functions\26772
+[debug] [2022-04-07T16:40:00.665Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: BUSY
+[debug] [2022-04-07T16:40:01.654Z] DEBUG: [runtime-status] [26772] Functions runtime initialized. {"cwd":"C:\\Users\\cherf\\projects\\metrodao\\functions","node_version":"14.17.4"}
+[debug] [2022-04-07T16:40:01.655Z] DEBUG: [runtime-status] [26772] Disabled runtime features: undefined
+[debug] [2022-04-07T16:40:01.658Z] DEBUG: [runtime-status] [26772] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.659Z] DEBUG: [runtime-status] [26772] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.659Z] DEBUG: [runtime-status] [26772] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2022-04-07T16:40:01.660Z] DEBUG: [runtime-status] [26772] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.726Z] DEBUG: [runtime-status] [26772] Checked functions.config() {"config":{}}
+[debug] [2022-04-07T16:40:01.727Z] DEBUG: [runtime-status] [26772] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2022-04-07T16:40:01.727Z] DEBUG: [runtime-status] [26772] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.728Z] DEBUG: [runtime-status] [26772] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.729Z] DEBUG: [runtime-status] [26772] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.20.0","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2022-04-07T16:40:01.729Z] DEBUG: [runtime-status] [26772] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.0.2","resolution":"C:\\Users\\cherf\\projects\\metrodao\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2022-04-07T16:40:01.731Z] DEBUG: [runtime-status] [26772] initializeApp(DEFAULT) {"storageBucket":"metrodao-5f654.appspot.com","projectId":"metrodao-5f654"}
+[warn] !  functions: The Cloud Firestore emulator is not running, so calls to Firestore will affect production. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"The Cloud Firestore emulator is not running, so calls to Firestore will affect production."}}
+[debug] [2022-04-07T16:40:01.754Z] DEBUG: [runtime-status] [26772] Beginning invocation function surveyCount!
+[debug] [2022-04-07T16:40:01.755Z] [functions] Beginning execution of "surveyCount"
+[debug] [2022-04-07T16:40:01.755Z] DEBUG: [runtime-status] [26772] Running surveyCount in signature event
+[debug] [2022-04-07T16:40:01.755Z] DEBUG: [runtime-status] [26772] ProcessBackground {"eventId":"2cbadfa1-a52b-4ba3-832b-5f0129ec861d","timestamp":"2022-04-07T16:40:00.655Z","eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/metrodao-5f654/databases/(default)/documents/users/userId4/communitySurveyResults","data":{"value":{},"oldValue":{}}}
+[debug] [2022-04-07T16:40:01.755Z] DEBUG: [runtime-status] [26772] RunBackground {"data":{"value":{},"oldValue":{}},"context":{"eventId":"2cbadfa1-a52b-4ba3-832b-5f0129ec861d","timestamp":"2022-04-07T16:40:00.655Z","eventType":"providers/cloud.firestore/eventTypes/document.create","resource":"projects/metrodao-5f654/databases/(default)/documents/users/userId4/communitySurveyResults"}}
+[info] >  {"severity":"WARNING","message":"Snapshot has no readTime. Using now()"} {"user":{"severity":"WARNING","message":"Snapshot has no readTime. Using now()"},"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m {\"severity\":\"WARNING\",\"message\":\"Snapshot has no readTime. Using now()\"}"}}
+[warn] !  Google API requested!
+   - URL: "https://oauth2.googleapis.com/token"
+   - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"Google API requested!\n   - URL: \"https://oauth2.googleapis.com/token\"\n   - Be careful, this may be a production service."}}
+[info] >  DocumentSnapshot { {"user":"DocumentSnapshot {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m DocumentSnapshot {"}}
+[info] >    _fieldsProto: undefined, {"user":"  _fieldsProto: undefined,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _fieldsProto: undefined,"}}
+[info] >    _ref: DocumentReference { {"user":"  _ref: DocumentReference {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _ref: DocumentReference {"}}
+[info] >      _firestore: Firestore { {"user":"    _firestore: Firestore {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     _firestore: Firestore {"}}
+[info] >        _settings: [Object], {"user":"      _settings: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _settings: [Object],"}}
+[info] >        _settingsFrozen: true, {"user":"      _settingsFrozen: true,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _settingsFrozen: true,"}}
+[info] >        _serializer: [Serializer], {"user":"      _serializer: [Serializer],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _serializer: [Serializer],"}}
+[info] >        _projectId: 'metrodao-5f654', {"user":"      _projectId: 'metrodao-5f654',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _projectId: 'metrodao-5f654',"}}
+[info] >        registeredListenersCount: 0, {"user":"      registeredListenersCount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       registeredListenersCount: 0,"}}
+[info] >        bulkWritersCount: 0, {"user":"      bulkWritersCount: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       bulkWritersCount: 0,"}}
+[info] >        _backoffSettings: [Object], {"user":"      _backoffSettings: [Object],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _backoffSettings: [Object],"}}
+[info] >        _clientPool: [ClientPool] {"user":"      _clientPool: [ClientPool]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       _clientPool: [ClientPool]"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      _path: QualifiedResourcePath { {"user":"    _path: QualifiedResourcePath {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     _path: QualifiedResourcePath {"}}
+[info] >        segments: [Array], {"user":"      segments: [Array],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       segments: [Array],"}}
+[info] >        projectId: 'metrodao-5f654', {"user":"      projectId: 'metrodao-5f654',","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       projectId: 'metrodao-5f654',"}}
+[info] >        databaseId: '(default)' {"user":"      databaseId: '(default)'","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       databaseId: '(default)'"}}
+[info] >      }, {"user":"    },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     },"}}
+[info] >      _converter: { {"user":"    _converter: {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     _converter: {"}}
+[info] >        toFirestore: [Function: toFirestore], {"user":"      toFirestore: [Function: toFirestore],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       toFirestore: [Function: toFirestore],"}}
+[info] >        fromFirestore: [Function: fromFirestore] {"user":"      fromFirestore: [Function: fromFirestore]","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m       fromFirestore: [Function: fromFirestore]"}}
+[info] >      } {"user":"    }","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     }"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    _serializer: Serializer { {"user":"  _serializer: Serializer {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _serializer: Serializer {"}}
+[info] >      createReference: [Function (anonymous)], {"user":"    createReference: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     createReference: [Function (anonymous)],"}}
+[info] >      createInteger: [Function (anonymous)], {"user":"    createInteger: [Function (anonymous)],","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     createInteger: [Function (anonymous)],"}}
+[info] >      allowUndefined: false {"user":"    allowUndefined: false","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m     allowUndefined: false"}}
+[info] >    }, {"user":"  },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   },"}}
+[info] >    _readTime: Timestamp { _seconds: 1649349601, _nanoseconds: 756000000 }, {"user":"  _readTime: Timestamp { _seconds: 1649349601, _nanoseconds: 756000000 },","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _readTime: Timestamp { _seconds: 1649349601, _nanoseconds: 756000000 },"}}
+[info] >    _createTime: undefined, {"user":"  _createTime: undefined,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _createTime: undefined,"}}
+[info] >    _updateTime: undefined {"user":"  _updateTime: undefined","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   _updateTime: undefined"}}
+[info] >  } undefined  then  { {"user":"} undefined  then  {","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m } undefined  then  {"}}
+[info] >    voteSpendAttendTrue: 0, {"user":"  voteSpendAttendTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendAttendTrue: 0,"}}
+[info] >    believeFundsFalse: 0, {"user":"  believeFundsFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   believeFundsFalse: 0,"}}
+[info] >    voteSpendAppFalse: 0, {"user":"  voteSpendAppFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendAppFalse: 0,"}}
+[info] >    knowLeaderTrue: 0, {"user":"  knowLeaderTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   knowLeaderTrue: 0,"}}
+[info] >    volunteerFalse: 0, {"user":"  volunteerFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   volunteerFalse: 0,"}}
+[info] >    attendCivicFalse: 0, {"user":"  attendCivicFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   attendCivicFalse: 0,"}}
+[info] >    voteSpendFalse: 0, {"user":"  voteSpendFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendFalse: 0,"}}
+[info] >    voteSpendTrue: 0, {"user":"  voteSpendTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendTrue: 0,"}}
+[info] >    knowLeaderFalse: 0, {"user":"  knowLeaderFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   knowLeaderFalse: 0,"}}
+[info] >    voteSpendAttendFalse: 0, {"user":"  voteSpendAttendFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendAttendFalse: 0,"}}
+[info] >    solutionIdeasFalse: 0, {"user":"  solutionIdeasFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   solutionIdeasFalse: 0,"}}
+[info] >    moneyDedicationKnowledgeTrue: 0, {"user":"  moneyDedicationKnowledgeTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   moneyDedicationKnowledgeTrue: 0,"}}
+[info] >    participatedFundsFalse: 0, {"user":"  participatedFundsFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   participatedFundsFalse: 0,"}}
+[info] >    voteSpendAppTrue: 0, {"user":"  voteSpendAppTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   voteSpendAppTrue: 0,"}}
+[info] >    solutionIdeasTrue: 0, {"user":"  solutionIdeasTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   solutionIdeasTrue: 0,"}}
+[info] >    moneyDedicationKnowledgeFalse: 0, {"user":"  moneyDedicationKnowledgeFalse: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   moneyDedicationKnowledgeFalse: 0,"}}
+[info] >    attendCivicTrue: 0, {"user":"  attendCivicTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   attendCivicTrue: 0,"}}
+[info] >    believeFundsTrue: 0, {"user":"  believeFundsTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   believeFundsTrue: 0,"}}
+[info] >    participatedFundsTrue: 0, {"user":"  participatedFundsTrue: 0,","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   participatedFundsTrue: 0,"}}
+[info] >    volunteerTrue: 0 {"user":"  volunteerTrue: 0","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m   volunteerTrue: 0"}}
+[info] >  } {"user":"}","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-surveyCount"},"extension":{},"message":"\u001b[90m> \u001b[39m }"}}
+[debug] [2022-04-07T16:40:02.388Z] DEBUG: [runtime-status] [26772] Ephemeral server survived.
+[debug] [2022-04-07T16:40:02.389Z] [functions] Finished "surveyCount" in ~1s
+[debug] [2022-04-07T16:40:02.389Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: IDLE
+[debug] [2022-04-07T16:47:29.192Z] DEBUG: File C:\Users\cherf\projects\metrodao\functions\src\firestore.ts changed, reloading triggers
+[debug] [2022-04-07T16:47:30.197Z] DEBUG: [worker-pool] Shutting down IDLE worker (us-central1-surveyCount)
+[debug] [2022-04-07T16:47:30.197Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: FINISHING
+[debug] [2022-04-07T16:47:30.198Z] Validating nodejs source
+[debug] [2022-04-07T16:47:32.374Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "build": "tsc",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.20.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
+[debug] [2022-04-07T16:47:32.374Z] Building nodejs source
+[debug] [2022-04-07T16:47:32.374Z] Analyzing nodejs backend spec
+[debug] [2022-04-07T16:47:32.380Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: exited
+[debug] [2022-04-07T16:47:32.380Z] DEBUG: [worker-us-central1-surveyCount-85dae282-ffa7-41fa-a515-c89d7b27553d]: FINISHED

@@ -1,0 +1,16 @@
+@media screen and (max-width: 786px) {
+  
+}
+
+@media screen and (min-width: 786px) {
+  .wrapper{
+    padding-top: 1em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 1048px;
+    margin: auto;
+    grid-gap: 28px;
+    color: white;
+  }
+}

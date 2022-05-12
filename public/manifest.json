@@ -1,0 +1,9 @@
+{
+  "name": "metrodao",
+  "start_url": "/?home=true",
+  "icons": [],
+  "theme_color": "black",
+  "background_color": "white",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

@@ -1,0 +1,93 @@
+@media screen and (min-width: 786px) {
+  .event_accordion{
+    background-color: #272522;
+    border-radius: 12px;
+    min-width: 100%;
+    padding: 18.5px;
+    box-shadow: 0px 21px 18px -200px #00000050, 0px -21px 36px 0px #00000050;
+    position: absolute;
+    
+    &:hover {
+    z-index: 99;
+    }
+  }
+  .event_accordion:nth-of-type(1) {
+  box-shadow: none;
+  }
+  .event_accordion:nth-of-type(2) {
+  top: 75px;
+  }
+  .event_accordion:nth-of-type(3) {
+  top: 150px;
+  }
+  .event_accordion:nth-of-type(4) {
+  top: 225px;
+  }
+   .preview_card{
+    min-height: 100px;
+    h4{
+      margin-bottom: 7.5px;
+      color: rgb(149, 149, 149);
+      font-size: 15px;
+    }
+
+    h3{
+      margin-bottom: 1em;
+      color: #b6b5b5;
+      font-size: 18px;
+    }
+
+    p{
+      margin-bottom: 1em;
+      color: #b6b5b5; 
+    }
+
+    button{
+      height: 30px;
+      width: 100px;
+      background-color: #14D010;
+      border: none;
+      border-radius: 12px;
+      color: rgb(50, 50, 50);
+      font-weight: 500;
+      transition: 0.5s;
+      margin-bottom: 2em;
+      cursor: pointer;
+      
+      &:hover{
+        background-color: #36f833;
+      }
+    }
+
+  }
+
+  .expanded{
+    padding: 0em;
+    border-top: 1px solid white;
+
+    p{
+      padding: 1em;
+      padding-top: 2em;
+      color: rgba(255, 255, 255, 0.824);
+    }
+
+    button{
+      margin-left: 1em;
+      height: 30px;
+      width: 100px;
+      background-color:#0d0c0c ;
+      color: white;
+      border: 0;
+      border-radius: 12px;
+      color: lightgray;
+
+      cursor: pointer;
+    }
+
+    
+    .attend{
+      background-color: white;
+      color: black; 
+    }
+  }
+}

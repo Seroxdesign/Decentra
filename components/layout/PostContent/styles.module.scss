@@ -1,0 +1,64 @@
+@import '../../../theme/variables.scss';
+@import '../../../theme/mixins.scss';
+
+.kicker_nav {
+  color: #959595;
+}
+.small_title{
+  margin-top: 1.5em;
+  display: flex;
+  
+  img {
+    max-width: 44px;
+    border-radius: 12px;
+  }
+  
+}
+.title{
+  margin: 0.25em 0;
+  color: #b6b5b5;
+  font-size: 38px;
+}
+.subtitle {
+  font-weight: normal;
+  font-size: 19px;
+}
+.userprofilepicture {
+margin-right: 12px;
+}
+.user_blog {
+  text-decoration: none;
+  font-weight: 600;
+  color: #b6b5b5;
+}
+.publicationdate {
+  font-size: 15px;
+  margin-top: 0.25em;
+}
+.postcontent {
+font-size: 17px;
+}
+.blogpostcontent {
+  img {
+    max-width: 100%;
+    margin: 0.5em 0;
+  }
+  p {
+  padding-top: 1em;
+  }
+}
+.card{
+  color: #b6b5b5;
+  width: 720px;
+  margin: auto;
+  padding-top: 2em;
+} 
+@media screen and (max-width: 786px) {
+  .card {
+    width: 100%;
+    padding: 1em;
+  }
+  .title {
+    font-size: 32px;
+  }
+}

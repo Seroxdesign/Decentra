@@ -1,0 +1,67 @@
+.profileModal{
+  z-index: 99;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.668);
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  top: 0;
+
+  .close{
+    height: 5vh;
+    width: 30vw;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    background-color: rgb(229, 60, 60);
+    color: white;
+    border-radius: 12px;
+    border: none;
+  }
+}
+
+.form{
+  z-index: 100;
+    width: 90%;
+    min-width: 300px;
+    height: 70vh;
+    min-height: 500px;
+    background-color: #3D3B39;
+    padding: 1em;
+    padding-top: 2em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+  div{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input{
+    margin-top: 0.5em;
+    color: white;
+    padding: 0.5em;
+    min-height: 50px;
+    background-color: #222121;
+    border: 1px solid #3D3B39;
+    border-radius: 7.5px;
+    padding-left: 1em;
+    width: 100%;
+  }
+
+  button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    min-height: 5vh;
+    height: 60px;
+    background-color: rgb(26, 187, 26);
+    border: none;
+    border-radius: 12px;
+    color: white;
+  }
+}

@@ -1,0 +1,151 @@
+@import '../../../theme/variables.scss';
+
+@media screen and (min-width: 786px) {
+
+  .long_block{
+    max-height: 100%;
+    width: 100%;
+    background-color: #272522;
+    padding: 22.5px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 12px;
+    max-width: 1048px;
+    
+    h3{
+      color: rgb(187, 183, 183);
+      font-size: 18px
+    }
+
+    hr{
+      margin-top: 1em;
+      border: none;
+      height: 1.35px;
+      background: #3d3b39;
+    }
+  }
+  
+  .card{
+    min-height: 15vh;
+    padding: 22.5px 0;
+    width: 100%;
+    background-color: #272522;
+    display: grid;
+    grid-template-columns: 300px 352.5px;
+    grid-gap: 22.5px;
+    border-bottom: 1.35px solid #3d3b39;
+    
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: 0;
+      }
+
+    a{
+      color: rgba(255, 255, 255, 0.635);
+      text-decoration: none;
+      cursor: pointer;
+      transition: 0.5s;
+      
+      &:hover{
+        color: rgb(255, 255, 255);
+      }      
+    }
+
+    strong{
+      color: #939290; 
+    }
+
+    img{
+      min-width: 300px;
+      border-radius: 12px;
+    }
+
+    footer{
+      margin-top: 1em;
+      color: white;
+    }
+  }
+  
+  .post_details {
+      margin-top: 0.75em;
+      color: #939290;
+          
+    span{
+        margin-left: 16px;
+      }  
+  }
+
+  .content_preview{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .preview{
+    color: #b6b5b5;
+    margin-top: 0.75em;
+    line-height: 1.3em;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  
+  .long_block{
+
+    background-color: #272522;
+    padding: 1em;
+    border-radius: 25px 25px 0px 0px;
+    min-height: 100%;
+
+    hr{
+      margin-top: 1em;
+      border: none;
+      height: 1.35px;
+      background: #3d3b39;
+    }    
+  }
+  
+  .card{
+    min-height: 15vh;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    width: 100%;
+    background-color: #272522;
+    display: flex;
+    flex-direction: column;
+
+    border-bottom: 1px solid rgb(53, 53, 53);
+
+    a{
+      color: rgba(255, 255, 255, 0.635);
+      text-decoration: none;
+      margin-top: 1em;
+      cursor: pointer;
+      transition: 0.5s;
+      
+      &:hover{
+        color: rgb(255, 255, 255);
+      }
+
+      span{
+        margin-left: 1em;
+        color: rgba(211, 211, 211, 0.519);
+      }
+    }
+
+    strong{
+      color: rgba(255, 255, 255, 0.499); 
+    }
+
+    img{
+      min-width: 100%;
+      margin-right: 1em;
+      border-radius: 12px;
+    }
+
+    footer{
+      margin-top: 1em;
+      color: white;
+    }
+  }
+}
+

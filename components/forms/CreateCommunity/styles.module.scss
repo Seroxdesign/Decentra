@@ -1,0 +1,124 @@
+@media screen and (max-width: 786px) {
+  .newBtn{
+    background-color: transparent;
+    color: #B4B3B2;
+    border: 0px;
+    padding: 0rem;
+    font-size: 15px;
+    border: 1px solid #8b8b8b;
+    border-radius: 12px;
+    border: 1px solid white; 
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .form_bg{
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.668);
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 0;
+  }
+  
+  .create_form{
+    z-index: 100;
+    width: 25vw;
+    min-width: 300px;
+    height: 70vh;
+    min-height: 500px;
+    background-color: #3D3B39;
+    padding: 1em;
+    padding-top: 2em;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    h4{
+      color: white;
+      margin-bottom: 1em;
+    }
+  
+    hr{
+      margin-bottom: 2em;
+    }
+  
+    label{
+      color: lightgray;
+      margin-top: 1em;
+    }
+  }
+  
+  .input{
+    margin-top: 0.5em;
+    color: white;
+    padding: 0.5em;
+    min-height: 50px;
+    background-color: #222121;
+    border: 1px solid #3D3B39;
+    border-radius: 7.5px;
+    padding-left: 1em;
+  }
+  
+  .link_maker{
+    height: 154px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #3D3B39;
+    border-radius: 7.5px;
+    box-shadow: 0 5px 4px 0px #1d1c1a4f;
+    transition: 0.5s;
+    cursor: pointer;
+  
+    &:hover{
+      border: 1px solid #8b8b8b;
+    }
+  }
+  
+  .newBtn{
+    background-color: transparent;
+    color: #B4B3B2;
+    border: 0px;
+    padding: 0rem;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .btns{
+  
+    button{
+      margin-right: 1em;
+      height: 40px;
+      min-width: 100px;
+      padding-left: 1em;
+      padding-right: 1em;
+      border: 0;
+      color: white;
+      border-radius: 12px;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+  }
+  
+  .cancel{
+    background-color: rgb(229, 60, 60);
+    &:hover{
+      background-color: rgb(174, 35, 35);
+    }
+  }
+  
+  .approve{
+    background-color: rgb(26, 187, 26);
+    &:hover{
+      background-color: rgb(24, 119, 24);
+    }
+  }
+}

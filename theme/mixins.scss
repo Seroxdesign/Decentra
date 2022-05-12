@@ -1,0 +1,30 @@
+@import './variables.scss';
+
+@mixin section($height, $width, $padding, $bg: rgba(255, 255, 255, 0), $gradient: linear-gradient(#35aba500, rgba(90, 222, 218, 0))){
+  height: $height;
+  width: $width;
+  background-color: $bg;
+  background: $gradient;
+  padding: $padding;
+}
+
+@mixin button($height, $width, $color, $bg, $border, $border-radius, $margin-top){
+  height: $height;
+  width: $width;
+  color: $color;
+  background-color: $bg;
+  border: $border;
+  border-radius: $border-radius;
+  margin-top: $margin-top;
+}
+
+@mixin flex($display, $flex-direction, $align, $justify){
+  display: $display;
+  flex-direction: $flex-direction;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin header($color){
+  color: $color;
+}

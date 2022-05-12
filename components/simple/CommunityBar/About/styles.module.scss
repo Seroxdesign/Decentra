@@ -1,0 +1,47 @@
+@media screen and (min-width: 786px) {
+  .about_card{
+    height: 100%;
+    background-color: #272522;
+    color: #b6b5b5;
+    border-radius: 12px;
+    padding: 18.5px;
+    
+    h3{
+      margin-bottom: 15px;
+    }
+    
+    hr{
+      border: none;
+      height: 1px;
+      background: #3d3b39;
+    }
+
+    p{
+      margin: 15px 0px;
+    }
+
+    div{
+      display: flex;
+      flex-direction: column;
+      
+         span{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px;
+
+        img{
+          margin-right: 1em;
+          width: 20px;
+        }
+      }
+       span:last-child {
+      margin-bottom: 0px;
+      }
+    }
+  }
+
+  .community{
+      filter: brightness(0) invert(0.7);
+  }
+}
