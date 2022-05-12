@@ -33,7 +33,6 @@ function PostItem({post, admin = false}) {
       <div className={styles.content_preview}>
           
         <div className={styles.post_details}>
-        <ReactMarkdown>{post.user?.photoURL}</ReactMarkdown>
         <Link href={`/${post.username}`}>
           <a>
             <strong>{post.username}</strong>
