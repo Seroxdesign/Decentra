@@ -50,13 +50,12 @@ function PostItem({post, admin = false}) {
         <span className={styles.preview}>
           {contentPreview.join(' ')}
         </span>
-        
-        <ReactMarkdown>{post?.icon}</ReactMarkdown>
-
-        <span className={styles.count}>💗 {post.heartCount || 0}</span>
-        
+            
       </div>
       
+      <ReactMarkdown>{post?.icon}</ReactMarkdown>
+
+      <span className={styles.count}>💗 {post.heartCount || 0}</span>
 
       {/* If admin view, show extra controls for user */}
       {admin && (
