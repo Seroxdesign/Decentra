@@ -5,11 +5,8 @@
   .long_block{
     max-height: 100%;
     width: 100%;
-    background-color: #272522;
-    padding: 22.5px;
     margin-top: 2em;
     margin-bottom: 2em;
-    border-radius: 12px;
     max-width: 1048px;
     
     h3{
@@ -30,16 +27,6 @@
     padding: 22.5px 0;
     width: 100%;
     background-color: #272522;
-    display: grid;
-    grid-template-columns: 300px 352.5px;
-    grid-gap: 22.5px;
-    border-bottom: 1.35px solid #3d3b39;
-    
-    &:last-child {
-        padding-bottom: 0;
-        border-bottom: 0;
-      }
-
     a{
       color: rgba(255, 255, 255, 0.635);
       text-decoration: none;
@@ -57,7 +44,6 @@
 
     img{
       min-width: 300px;
-      border-radius: 12px;
     }
 
     footer{
