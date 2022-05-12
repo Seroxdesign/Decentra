@@ -1,5 +1,4 @@
 import Navbar from '../components/layout/Navbar/index'
-import { ChainId, ThirdwebProvider } from '@thirdweb-dev/react';
 import PageWrapper from '@components/layout/PageWrapper';
 import '../theme/global.scss';
 import { Toaster } from 'react-hot-toast';
@@ -14,13 +13,13 @@ function MyApp({ Component, pageProps }) {
   return (
     
     <UserContext.Provider value={userData}>
-      <ThirdwebProvider desiredChainId={activeChainId}>
+
         <Navbar />
         <PageWrapper>
           <Component {...pageProps} />
         </PageWrapper>
         <Toaster />
-      </ThirdwebProvider >
+      
     </UserContext.Provider>
   );
 }
