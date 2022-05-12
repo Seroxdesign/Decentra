@@ -47,13 +47,13 @@ function PostItem({post, admin = false}) {
           </h3>
         </Link>
         
-        <ReactMarkdown>{post?.icon}</ReactMarkdown>
-
-        <span className={styles.count}>💗 {post.heartCount || 0}</span>
-
         <span className={styles.preview}>
           {contentPreview.join(' ')}
         </span>
+        
+        <ReactMarkdown>{post?.icon}</ReactMarkdown>
+
+        <span className={styles.count}>💗 {post.heartCount || 0}</span>
         
       </div>
       
