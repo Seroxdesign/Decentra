@@ -33,6 +33,7 @@ function PostItem({post, admin = false}) {
       <div className={styles.content_preview}>
           
         <div className={styles.post_details}>
+        <a>{user?.photoURL}</a>
         <Link href={`/${post.username}`}>
           <a>
             <strong>{post.username}</strong>
