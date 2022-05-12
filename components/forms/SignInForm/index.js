@@ -1,16 +1,10 @@
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { createUserWithEmailAndPassword } from 'firebase/auth';
-import { useAddress, useDisconnect, useMetamask, useNetworkMismatch } from '@thirdweb-dev/react';
 import { auth } from '@lib/firebase';
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 
 export function SignUpForm({handleGoogleSignIn, toggleProcess}) {
-
-  const address = useAddress();
-  const connectWithMetamask = useMetamask();
-  const disconnectWallet = useDisconnect();
-
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   console.log(email, password);
@@ -65,10 +59,6 @@ export function SignUpForm({handleGoogleSignIn, toggleProcess}) {
           <div className={styles.social_login}>
             <button onClick={handleSocialSignIn}>
               Google
-            </button>
-
-            <button>
-              Connect Wallet
             </button>
 
             <button onClick={toggleProcess}>
