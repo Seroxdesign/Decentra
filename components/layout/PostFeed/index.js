@@ -54,7 +54,7 @@ function PostItem({post, admin = false}) {
       
       <ReactMarkdown>{post?.icon}</ReactMarkdown>
 
-      <div className={styles.action-buttons}><span className={styles.count}>💗 {post.heartCount || 0}</span></div>
+      <div className="action-buttons"><span className={styles.count}>💗 {post.heartCount || 0}</span></div>
 
       {/* If admin view, show extra controls for user */}
       {admin && (
