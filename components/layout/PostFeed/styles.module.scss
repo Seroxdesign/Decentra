@@ -16,7 +16,7 @@
   }
   
   .card{
-    padding: 20px 0;
+    padding: 20px 0 15px 0;
     width: 100%;
     background-color: #272522;
     border-radius: 12px;
@@ -41,7 +41,7 @@
 
     img{
       min-width: 100%;
-      margin: 15px 0;
+      margin-top: 15px;
     }
 
     footer{
@@ -53,10 +53,6 @@
   .post_details {
       margin-bottom: 0.5em;
       color: #939290;
-          
-    span{
-        margin-left: 16px;
-      }  
   }
 
   .content_preview{
@@ -69,6 +65,11 @@
     color: #b6b5b5;
     margin-top: 0.75em;
     line-height: 1.3em;
+  }
+  .action-buttons {
+    margin-top: 15px;
+    padding: 0 20px;
+    color: rgb(187, 183, 183)
   }
 }
 
