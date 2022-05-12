@@ -74,12 +74,6 @@ export function SignUpForm({handleGoogleSignIn, toggleProcess}) {
 }
 
 export function SignInForm({handleGoogleSignIn, toggleProcess}) {
-
-  const address = useAddress();
-  const connectWithMetamask = useMetamask();
-  const disconnectWallet = useDisconnect();
-  const isMismatched = useNetworkMismatch();
-
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   console.log(email, password);
