@@ -47,7 +47,7 @@ function PostItem({post, admin = false}) {
         </Link>
         
         <span className={styles.preview}>
-          {contentPreview.join(' ')}
+          {post.subtitle}
         </span>
             
       </div>
