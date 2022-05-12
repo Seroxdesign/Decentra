@@ -5,8 +5,6 @@ import { Toaster } from 'react-hot-toast';
 import { UserContext } from '../lib/context';
 import { useUserData } from '../lib/hooks';
 
-const activeChainId = ChainId.Mumbai;
-
 function MyApp({ Component, pageProps }) {
   const userData = useUserData();
 
