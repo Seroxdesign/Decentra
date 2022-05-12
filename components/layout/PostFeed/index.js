@@ -7,8 +7,7 @@ export default function PostFeed({posts, admin}) {
     
   return (
     <div className={styles.long_block}>
-      <h3>Latest</h3>
-      <hr />
+      <h2>Latest</h2>
       { posts ? posts.map((post) => <PostItem post={post} key={post.slug} admin={admin}/>) : null }
     </div>
   )
@@ -31,30 +30,31 @@ function PostItem({post, admin = false}) {
   return (
     <div className={styles.card}>
 
-      <ReactMarkdown>{post?.icon}</ReactMarkdown>
-
       <div className={styles.content_preview}>
-        <Link href={`/${post.username}/${post.slug}`}>
-          <h3>
-            <a href={`/${post.username}/${post.slug}`}>{post.title}</a>
-          </h3>
-        </Link>
-
+          
         <div className={styles.post_details}>
         <Link href={`/${post.username}`}>
           <a>
             <strong>{post.username}</strong>
           </a>
         </Link>
-        <span className={styles.count}>💗 {post.heartCount || 0}</span>
         </div>
-
-        <span className={styles.preview}>
-          {contentPreview.join(' ')}
-        </span>
+          
+        <Link href={`/${post.username}/${post.slug}`}>
+          <h3>
+            <a href={`/${post.username}/${post.slug}`}>{post.title}</a>
+          </h3>
+        </Link>
         
+        <span className={styles.preview}>
+          {post.subtitle}
+        </span>
+            
       </div>
       
+      <ReactMarkdown>{post?.icon}</ReactMarkdown>
+
+      <div className={styles.action}><span className={styles.count}>💗 {post.heartCount || 0}</span></div>
 
       {/* If admin view, show extra controls for user */}
       {admin && (

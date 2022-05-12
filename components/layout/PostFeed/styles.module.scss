@@ -5,41 +5,24 @@
   .long_block{
     max-height: 100%;
     width: 100%;
-    background-color: #272522;
-    padding: 22.5px;
     margin-top: 2em;
     margin-bottom: 2em;
-    border-radius: 12px;
     max-width: 1048px;
     
-    h3{
+    h2{
       color: rgb(187, 183, 183);
-      font-size: 18px
-    }
-
-    hr{
-      margin-top: 1em;
-      border: none;
-      height: 1.35px;
-      background: #3d3b39;
+      font-size: 20px;
+      margin-bottom: 25px;
     }
   }
   
   .card{
-    min-height: 15vh;
-    padding: 22.5px 0;
+    padding: 20px 0 15px 0;
     width: 100%;
     background-color: #272522;
-    display: grid;
-    grid-template-columns: 300px 352.5px;
-    grid-gap: 22.5px;
-    border-bottom: 1.35px solid #3d3b39;
-    
-    &:last-child {
-        padding-bottom: 0;
-        border-bottom: 0;
-      }
-
+    border-radius: 12px;
+    box-shadow: 0 5px 4px 0 #23211f;
+    margin-bottom: 30px;
     a{
       color: rgba(255, 255, 255, 0.635);
       text-decoration: none;
@@ -50,14 +33,16 @@
         color: rgb(255, 255, 255);
       }      
     }
-
+    h3{
+      font-size: 22px
+    }
     strong{
       color: #939290; 
     }
 
     img{
-      min-width: 300px;
-      border-radius: 12px;
+      min-width: 100%;
+      margin-top: 15px;
     }
 
     footer{
@@ -67,23 +52,25 @@
   }
   
   .post_details {
-      margin-top: 0.75em;
+      margin-bottom: 0.5em;
       color: #939290;
-          
-    span{
-        margin-left: 16px;
-      }  
   }
 
   .content_preview{
     display: flex;
     flex-direction: column;
+    padding: 0 20px;
   }
 
   .preview{
     color: #b6b5b5;
     margin-top: 0.75em;
     line-height: 1.3em;
+  }
+  .action {
+    margin-top: 15px;
+    padding: 0 20px;
+    color: rgb(187, 183, 183);
   }
 }
 
