@@ -38,7 +38,6 @@ function PostItem({post, admin = false}) {
             <strong>{post.username}</strong>
           </a>
         </Link>
-        <i>{createdAt.toISOString()}</i>
         </div>
           
         <Link href={`/${post.username}/${post.slug}`}>
