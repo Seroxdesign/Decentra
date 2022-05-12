@@ -137,23 +137,7 @@ export function SignInForm({handleGoogleSignIn, toggleProcess}) {
               Google
             </button>
             
-            <div>
-              {address ? (
-                <>
-                  <button onClick={disconnectWallet}>Disconnect Wallet</button>
-                  <p>Your address: {address}</p>
-                  {isMismatched ? (
-                    <div style={{ fontSize: "20px", fontFamily: "arial" }}>Please switch to the Mumbai network</div>
-                  ) : (
-                    <div></div>
-                  )}
-                </>
-              ) : (
-                // <button onClick={connectWithMetamask}>Connect with Metamask</button>
-                <button onClick={connectWithMetamask}>Connect Wallet</button>
-              )}
-            </div>
-
+          
             <button onClick={toggleProcess}>
               Or Sign Up
             </button>
