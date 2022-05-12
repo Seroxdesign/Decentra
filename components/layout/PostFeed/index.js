@@ -8,7 +8,6 @@ export default function PostFeed({posts, admin}) {
   return (
     <div className={styles.long_block}>
       <h3>Latest</h3>
-      <hr />
       { posts ? posts.map((post) => <PostItem post={post} key={post.slug} admin={admin}/>) : null }
     </div>
   )
