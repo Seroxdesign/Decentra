@@ -23,10 +23,11 @@
   }
   
   .card{
-    min-height: 15vh;
-    padding: 22.5px 0;
+    padding: 20px 0;
     width: 100%;
     background-color: #272522;
+    border-radius: 12px;
+    box-shadow: 0 5px 4px 0 #23211f;
     a{
       color: rgba(255, 255, 255, 0.635);
       text-decoration: none;
@@ -43,7 +44,7 @@
     }
 
     img{
-      min-width: 300px;
+      min-width: 100%;
     }
 
     footer{
