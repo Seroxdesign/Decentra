@@ -26,13 +26,6 @@ export default function Navbar() {
         {/* user is signed-in and has username */}
         {username && (
           <div className={ mobileMenu ? styles.mobile_wrap : styles.links}>
-            <li className={styles.li}>
-              <Link href="/">
-                <div className={styles.logo} />
-              </Link>
-              <a>Decentra</a>
-            </li>
-            <div className={styles.seperator}/>
            <ul className={styles.ul_universal}>
              {
                username ? 
