@@ -14,7 +14,7 @@ export default function PageWrapper(props) {
     <a className={styles.active_communityname}>Decentra</a>
   </div>
 
-<div className={styles.horizontal_navbarcontent}>
+<div className={styles.horizontal_navbarcontentright}>
   <button className={styles.createpost}>+ New post</button>
 <a>Sign Up</a>
   </div>
