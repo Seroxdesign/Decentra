@@ -71,18 +71,18 @@ export default function Navbar() {
              <li className={styles.li}>
               <Link href="/Admin">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/GRgdJCy/kalender.png" alt="Create"></img>
+                  <img src="https://i.ibb.co/f4VvhFp/house.png" alt="Create"></img>
                 </button>
               </Link>
-              <a>Create post</a>
+              <a>Home</a>
             </li>
             <li className={styles.li}>
               <Link href="/">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/ZY6Z6Jx/tipps.png" alt="Forum"/>
+                  <img src="https://i.ibb.co/7zhc5Vr/calendar.png" alt="Forum"/>
                 </button>
               </Link>
-              <a>Settings</a>
+              <a>Events</a>
             </li>
            </ul>
             <div className={styles.seperator}/>
