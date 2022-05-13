@@ -42,6 +42,13 @@
     display: flex;
   }
   
+    .horizontal_navbarcontentright {
+    align-items: center;
+    height: 60px;
+    display: flex;
+      gap: 20px;
+  }
+  
   .active_communitylogo {
     background-color: #fff;
     background-image: url(https://i.imgur.com/YeqM8du.png);
