@@ -5,13 +5,13 @@
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #272522;
+    background-color: #f2f2f2;
   }
   
   .inner_container{
     margin-left: 66px;
     width: calc(100% - 66px);
-    background-color:  #2E2B29;
+    background-color: #f2f2f2;
     overflow-y: scroll;
     overflow-x: hidden;
     height: 100%;
@@ -22,7 +22,7 @@
 @media screen and (max-width: 786px) {
   .inner_container{
     width: 100vw;
-    background-color:  #2E2B29;
+    background-color: #f2f2f2;
     height: 100%;
     margin-top: 60px;
     overflow-y: hidden;
