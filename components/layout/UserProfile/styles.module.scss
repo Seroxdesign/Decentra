@@ -46,9 +46,13 @@
     grid-template-columns: repeat(2, 1fr);
 
     main{
-      margin-top: -7%;
-      padding: 2em;
-      padding-top: 0;
+      padding: 20px 0px 0px 20px;
+      
+      h1 {
+      color: black;
+    font-size: 36px;
+    font-weight: 800;
+      }
     }
 
     aside{
