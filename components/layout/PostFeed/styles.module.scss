@@ -7,7 +7,7 @@
     width: 100%;
     margin-top: 2em;
     margin-bottom: 2em;
-    max-width: 1048px;
+    max-width: 960px;
     
     h2{
       color: rgb(187, 183, 183);
@@ -19,12 +19,12 @@
   .card{
     padding: 20px 0 15px 0;
     width: 100%;
-    background-color: #272522;
+    background-color: white;
     border-radius: 12px;
-    box-shadow: 0 5px 4px 0 #23211f;
+    box-shadow: 0 5px 4px 0 #e4e1db;
     margin-bottom: 30px;
     a{
-      color: rgba(255, 255, 255, 0.635);
+      color: black;
       text-decoration: none;
       cursor: pointer;
       transition: 0.5s;
