@@ -32,7 +32,9 @@ export default function Navbar() {
 
                <li className={styles.li}>
                 <Link href={`/${username}`}>
-                  <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img} />
+                  <button className={styles.link_btn}>
+                  <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img}></img>
+                </button>
                 </Link>
                 <a>User profile</a>
               </li>
