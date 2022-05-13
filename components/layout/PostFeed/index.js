@@ -7,7 +7,7 @@ export default function PostFeed({posts, admin}) {
     
   return (
     <div className={styles.long_block}>
-      <h2>Latest</h2>
+      <h2>Feed</h2>
       { posts ? posts.map((post) => <PostItem post={post} key={post.slug} admin={admin}/>) : null }
     </div>
   )
@@ -33,11 +33,13 @@ function PostItem({post, admin = false}) {
       <div className={styles.content_preview}>
           
         <div className={styles.post_details}>
+        <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg">
         <Link href={`/${post.username}`}>
           <a>
             <strong>{post.username}</strong>
           </a>
         </Link>
+        <span className={styles.publication_date}>May 13, 2022</span>
         </div>
           
         <Link href={`/${post.username}/${post.slug}`}>
