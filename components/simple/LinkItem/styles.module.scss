@@ -37,7 +37,7 @@
   .link_block{
     height: 154px;
     width: 100%;
-    background-color: #272522;
+    background-color: white;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -45,7 +45,7 @@
     flex-direction: column;
     text-decoration: none;
     border-radius: 7.5px;
-    box-shadow: 0 5px 4px 0px #1d1c1a;
+    box-shadow: 0 5px 4px 0 #e4e1db;
     color: #b4b3b2;
   
     h2{
@@ -60,7 +60,7 @@
   }
   
   .link_block:hover{
-    background-color: #212120;
+    background-color: #ededed;
   }
   
   .white_icon{
