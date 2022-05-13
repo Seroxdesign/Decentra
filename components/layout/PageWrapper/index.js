@@ -11,8 +11,8 @@ export default function PageWrapper(props) {
   <div className={styles.horizontal_navbarcontent}>
                   <Link href="/">
 <div className={styles.active_communitylogo}></div>
-    <a className={styles.active_communityname}>Decentra</a>
                   </Link>
+    <a className={styles.active_communityname}>Decentra</a>
   </div>
   </div>
 
