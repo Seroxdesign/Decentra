@@ -29,6 +29,7 @@ export default function Navbar() {
             <li className={styles.li}>
               <Link href="/">
                 <div className={styles.logo} />
+                  <a>Decentra</a>
               </Link>
             </li>
             <div className={styles.seperator}/>
