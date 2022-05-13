@@ -16,6 +16,22 @@
     overflow-x: hidden;
     height: 100%;
   }
+  
+  .horizontal_navbar {
+    align-items: center;
+    height: 60px;
+    display: flex;
+  }
+  
+  .active_communitylogo {
+    background-color: #fff;
+    background-image: url(https://i.imgur.com/YeqM8du.png);
+    height: 35px;
+    background-size: cover;
+    width: 35px;
+    border-radius: 7.5px;
+    margin-right: 10px;
+  }
  
 }
 
