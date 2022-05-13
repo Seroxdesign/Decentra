@@ -30,9 +30,7 @@
   .links{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 35px;
+    width: 200px;
   }
   
   .pushRight{
@@ -43,10 +41,9 @@
   
   .ul{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
+    width: 220px;
     margin-top: 9px;
+    padding-left: 20px;
   }
   .ul_universal {
     display:flex;
