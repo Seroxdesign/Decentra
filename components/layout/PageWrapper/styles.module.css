@@ -18,6 +18,14 @@
   }
   
   .horizontal_navbar {
+    height: 60px;
+    background: #feebef;
+    position: sticky;
+    top: 0px;
+    padding: 0 20px;
+  }
+  
+  .horizontal_navbarcontent {
     align-items: center;
     height: 60px;
     display: flex;
