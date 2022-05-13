@@ -8,10 +8,17 @@ export default function PageWrapper(props) {
     <div className={styles.container}>
   
   <div className={styles.horizontal_navbar}>
+    
   <div className={styles.horizontal_navbarcontent}>
 <div className={styles.active_communitylogo}></div>
     <a className={styles.active_communityname}>Decentra</a>
   </div>
+
+<div className={styles.horizontal_navbarcontent}>
+  <button className={styles.createpost}>+ New post</button>
+<a>Sign Up</a>
+  </div>
+
   </div>
 
       <div className={styles.inner_container}>
