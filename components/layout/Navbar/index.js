@@ -30,7 +30,7 @@ export default function Navbar() {
              {
                username ? 
 
-               <li className={styles.li_last}>
+               <li className={styles.li}>
                 <Link href={`/${username}`}>
                   <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img} />
                 </Link>
