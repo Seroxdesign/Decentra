@@ -6,14 +6,14 @@
     height: 100vh;
     width: 100vw;
     background-color: #f2f2f2;
+    overflow-y: scroll;
+
   }
   
   .inner_container{
     margin-left: 220px;
     width: calc(100% - 220px);
     background-color: #f2f2f2;
-    overflow-y: scroll;
-    overflow-x: hidden;
     height: 100%;
   }
   
