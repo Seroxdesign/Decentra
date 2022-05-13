@@ -5,23 +5,15 @@
     min-width: 100%;
     padding: 18.5px;
     box-shadow: 0px 21px 18px -200px #00000050, 0px -21px 36px 0px #00000050;
-    position: absolute;
+    margin-top: -130px;
     
     &:hover {
     z-index: 99;
     }
   }
   .event_accordion:nth-of-type(1) {
-  box-shadow: none;
-  }
-  .event_accordion:nth-of-type(2) {
-  top: 75px;
-  }
-  .event_accordion:nth-of-type(3) {
-  top: 150px;
-  }
-  .event_accordion:nth-of-type(4) {
-  top: 225px;
+    box-shadow: none;
+    margin-top: 0;
   }
    .preview_card{
     min-height: 100px;
