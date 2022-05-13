@@ -9,8 +9,8 @@
   }
   
   .inner_container{
-    margin-left: 66px;
-    width: calc(100% - 66px);
+    margin-left: 220px;
+    width: calc(100% - 220px);
     background-color: #f2f2f2;
     overflow-y: scroll;
     overflow-x: hidden;
