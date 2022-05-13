@@ -6,6 +6,8 @@ import { useRouter } from 'next/router'
 import debounce from 'lodash.debounce';
 import toast from 'react-hot-toast';
 import styles from './styles.module.scss'
+import ImageUploader from '@components/layout/ImageUploader';
+import { WalletEthers } from '@components/helpers/ConnectWallet';
 
 export default function Enter(props) {
   const { user, username } = useContext(UserContext);
@@ -72,26 +74,37 @@ function SignOutButton() {
 // Username form
 function UsernameForm() {
   const [formValue, setFormValue] = useState('');
+  const [fullName, setFullName] = useState('Decentra User');
+  const [banner, setBanner] = useState('https://i.imgur.com/sm6ziwz.png');
+  const [profilePic, setPic] = useState('https://i.imgur.com/kQGPkcN.png');
+  const [walletAddress, setAddress] = useState('');
+  const [network, setNetwork] = useState('');
+  const [bio, setBio] = useState('https://i.imgur.com/kQGPkcN.png');
   const [isValid, setIsValid] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
   const { user, username } = useContext(UserContext);
 
+  const valid = false;
+
   const onSubmit = async (e) => {
     e.preventDefault();
+    valid = fullName !== "" && bio !== "";
+    console.log(formValue, profilePic, fullName, banner, bio, walletAddress, network)
+    if(valid){
+      // Create refs for both documents
+      const userDoc = firestore.doc(`users/${user.uid}`);
+      const usernameDoc = firestore.doc(`usernames/${formValue}`);
 
-    // Create refs for both documents
-    const userDoc = firestore.doc(`users/${user.uid}`);
-    const usernameDoc = firestore.doc(`usernames/${formValue}`);
+      // Commit both docs together as a batch write.
+      const batch = firestore.batch();
+      batch.set(userDoc, { username: formValue, photoURL: profilePic, displayName: fullName, banner, bio: '', walletAddress, network});
+      batch.set(usernameDoc, { uid: user.uid });
 
-    // Commit both docs together as a batch write.
-    const batch = firestore.batch();
-    batch.set(userDoc, { username: formValue, photoURL: user.photoURL, displayName: user.displayName, });
-    batch.set(usernameDoc, { uid: user.uid });
-
-    await batch.commit();
-    toast.success('Created user successfully.')
-    router.push(`/${username}`)
+      await batch.commit();
+      toast.success('Welcome to Decentra.')
+      router.push(`/`)
+    }
   };
 
   const onChange = (e) => {
@@ -138,21 +151,38 @@ function UsernameForm() {
     !username && (
       <>
       <section className={styles.username_container}>
-        <h3 className={styles.username_header}>Secure your username</h3>
-        <form className={styles.username_form} onSubmit={onSubmit}>
-          <input className={styles.username_input} name="username" placeholder="myname" value={formValue} onChange={onChange} />
+
+        <div className={styles.username_form}>
+          <h3>Create your persona</h3>
+          <label>Username</label>
+          <input name="username" placeholder="myname" value={formValue} onChange={onChange} />
           <UsernameMessage username={formValue} isValid={isValid} loading={loading} />
-          <div>
-            Username: {formValue}
-            <br />
-            Loading: {loading.toString()}
-            <br />
+          <div className={isValid.toString() ? styles.exists : styles.hidden}>
             Username Valid: {isValid.toString()}
           </div>
-          <button type="submit" className={styles.username_btn} disabled={!isValid}>
-            Choose
+
+          <label>Display Name</label>
+          <input name="fullname" placeholder="Full Display Name" value={fullName} onChange={(e)=>{setFullName(e.target.value)}} /> 
+
+          <label>Bio</label>
+          <textarea name="bio" placeholder="write something about yourself" value={bio} onChange={(e)=>{setBio(e.target.value)}} />
+          <hr></hr>
+          <label>Banner</label>
+          <ImageUploader placeImage={setBanner}/>
+          <hr></hr>
+          <label>Profile Pic</label>
+          <ImageUploader placeImage={setPic}/>
+  
+          <label>Connect your wallet address</label>
+          <p>
+            This will allow you to take payments / donations
+          </p>
+          <WalletEthers connect={setAddress} setNetwork={setNetwork}/>
+          <hr></hr>
+          <button type="submit" className={styles.username_btn} disabled={!isValid}  onClick={onSubmit}>
+            Submit
           </button>
-        </form>
+        </div>
       </section>
 
       <div>

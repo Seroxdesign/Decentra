@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import {auth, storage, STATE_CHANGED} from '../../../lib/firebase'
 import Loader from '../../simple/Loader'
+import ReactMarkdown from 'react-markdown'
 import toast from 'react-hot-toast'
 import styles from './styles.module.scss'
 
@@ -44,6 +45,7 @@ export default function ImageUploader({placeImage}) {
 
         {!uploading && (
           <>
+          <ReactMarkdown>{`![alt](${downloadURL})`}</ReactMarkdown>
             <label>
               Upload Image
             </label>
