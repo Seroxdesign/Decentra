@@ -33,7 +33,7 @@
     display: flex;
     width: 220px;
     margin-top: 9px;
-    padding-left: 20px;
+    padding-left: 10px;
   }
   .ul_universal {
     display:flex;
@@ -58,9 +58,10 @@
   
   .li{
     width: 100%;
-    margin: 8px 0;
+    margin: 4.5px 0;
     display: flex;
     align-items: center;
+    padding: 7px 0px 7px 10px
   }
   
   .link_btn{
@@ -69,7 +70,7 @@
     color: white;
     border: none;
     border-radius: 7.5px;
-    margin-right: 10px;
+    margin-right: 12px;
     &:hover{
       background-color: rgb(60, 60, 60);
     }
@@ -99,7 +100,7 @@
   }
   
   .seperator{
-    height: 50px;
+    height: 25px;
   }
   
   .li_last{
