@@ -38,7 +38,11 @@ export default function Navbar() {
 
                <li className={styles.li_last}>
                 <Link href={`/${username}`}>
-                  <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img} />
+                  <button>
+                    <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img} />
+                    Profile
+                  </button>
+              
                 </Link>
               </li>
               :
@@ -110,13 +114,7 @@ export default function Navbar() {
         
 
         {/* user is not signed OR has not created username */}
-        {!username && (
-          <li className={styles.li_profile}>
-            <Link href="/Enter">
-              <button>Log in</button>
-            </Link>
-          </li>
-        )}
+      
       </ul>
     </nav>
   );

@@ -16,6 +16,9 @@ export default function UserProfile({ user, links }) {
   const [editor, setEditor] = useState(false)
   const [editOpen, setEditOpen] = useState(false)
 
+  const [address, setAddress] = useState(false)
+  const [network, setNetwork] = useState(false)
+
   useEffect(() => {
     if(admin.username === username){
       setEditor(true)
@@ -25,11 +28,21 @@ export default function UserProfile({ user, links }) {
   return (
     <div className={styles.profile}>
       <div className={styles.banner}>
-        <ReactMarkdown>{user?.banner}</ReactMarkdown>
+        {
+          user?.banner.slice(0, 4) === '![alt]' ?
+          <ReactMarkdown>{`![alt]${user?.banner}`}</ReactMarkdown>
+          :
+          <img src={user?.banner}></img>
+        }
       </div>
  
       <div className={styles.pfp}>
-        <ReactMarkdown>{user?.photoURL}</ReactMarkdown>
+        {
+          user?.photoURL.slice(0, 4) === '![alt]' ?
+          <ReactMarkdown>{`![alt]${user?.photoURL}`}</ReactMarkdown>
+          :
+          <img src={user?.photoURL}></img>
+        }
       </div>
 
       <div className={styles.profileGrid}>
@@ -43,10 +56,16 @@ export default function UserProfile({ user, links }) {
         <a href={"https://www.google.com"} target={"_blank"}> google.com </a>
       </div>
       
-      <div className={styles.toolbar}>
-
-        <button class="follow-user-profile">Follow</button>
-        <button class="subscribe-user-profile"><b>Subscribe</b> $50/mo</button>
+      <div className={styles.toolbar}>        
+        {
+          editor && user.network !== "" ?
+          ''
+          :
+          editor && user.network === "" ? 
+          <button class="subscribe-user-profile"><b>Connect Wallet</b></button>
+          :
+          <button class="subscribe-user-profile"><b>Donate</b></button>
+        }
 
         {
           editor ? <button onClick={() => setEditOpen(true)}>Edit</button> : ''

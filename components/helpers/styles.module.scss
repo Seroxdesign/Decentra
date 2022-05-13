@@ -1,9 +1,11 @@
-.connecter{
-  position: fixed;
-  bottom: 1vh;
-  right: 1em;
-  border: 2px solid red;
-  z-index: 100000;
-  background-color: rgba(255, 255, 255, 0.733);
-  max-width: 90vw;
+.connect_wallet{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 30vw;
+  height: 7vh;
+  min-height: 40px;
+  background-color: rgb(95, 95, 199);
+  color: white;
+  border: none;
+  border-radius: 12px;
 }

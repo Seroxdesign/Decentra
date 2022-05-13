@@ -17,7 +17,6 @@ function CreateNewLink(props){
   const [title, setTitle] = useState('');
   const [link, setLink] = useState('');
   const [icon, setIcon] = useState('');
-  const [loading, setLoading] = useState('');
 
    // Ensure slug is URL safe
    const slug = encodeURI(kebabCase(title));

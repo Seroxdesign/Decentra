@@ -1,7 +1,7 @@
 .uploader{
   min-height: 100px;
-  min-width: 100px;
-  width: 130px;
+ 
+  width: 100%;
   background-color: #272522;
   margin-top: 1em;
   margin-bottom: 1em;
@@ -13,6 +13,11 @@
   label{
     color: white;
     margin-bottom: 2em;
+  }
+
+  img{
+    width: 80%;
+    max-height: 100px;
   }
 }
 
