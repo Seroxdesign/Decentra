@@ -98,11 +98,12 @@ export default function Navbar() {
            </ul>
            <ul className={styles.ul_joined_communities}> 
            </ul>
+                       <div className={styles.seperator}/>
            <ul className={styles.ul_actions}> 
             <li className={styles.li}>
               <Link href="/Communities">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/5rWyV5p/sahdasdjhasj.png" alt="createcommunity" />
+                  <img src="https://i.ibb.co/HTTMKfN/add.png" alt="createcommunity" />
                 </button>
               </Link>
               <a>Create community</a>
@@ -110,7 +111,7 @@ export default function Navbar() {
             <li className={styles.li}>
               <Link href="/404">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/37sVsBX/disco.png" alt="discover" />
+                  <img src="https://i.ibb.co/NFbsNZj/123123-Untitled.png" alt="discover" />
                 </button>
               </Link>
               <a>Discover</a>
