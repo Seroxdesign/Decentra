@@ -6,9 +6,9 @@
 
 @media screen and (min-width: 786px) {
   .bar{
-    padding-top: 1em;
+    padding-top: 25px;
     position: sticky;
-    top: 0;
+    top: 50px;
     overflow-y: auto;
     max-height: 100vh;
     display: grid;
