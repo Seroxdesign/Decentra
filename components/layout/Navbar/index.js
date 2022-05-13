@@ -34,6 +34,7 @@ export default function Navbar() {
                 <Link href={`/${username}`}>
                   <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img} />
                 </Link>
+                <a>User profile</a>
               </li>
               :
               ''
@@ -48,6 +49,7 @@ export default function Navbar() {
                   <img src="https://i.ibb.co/GRgdJCy/kalender.png" alt="Create"></img>
                 </button>
               </Link>
+              <a>Create post</a>
             </li>
             <li className={styles.li}>
               <Link href="/">
@@ -55,6 +57,7 @@ export default function Navbar() {
                   <img src="https://i.ibb.co/ZY6Z6Jx/tipps.png" alt="Forum"/>
                 </button>
               </Link>
+              <a>Settings</a>
             </li>
            </ul>
             <div className={styles.seperator}/>
@@ -65,6 +68,7 @@ export default function Navbar() {
                   <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg" alt="decentra" />
                 </button>
               </Link>
+              <a>Decentra</a>
             </li>
            </ul>
            <ul className={styles.ul_joined_communities}> 
@@ -76,6 +80,7 @@ export default function Navbar() {
                   <img src="https://i.ibb.co/5rWyV5p/sahdasdjhasj.png" alt="createcommunity" />
                 </button>
               </Link>
+              <a>Create community</a>
             </li>
             <li className={styles.li}>
               <Link href="/404">
@@ -83,6 +88,7 @@ export default function Navbar() {
                   <img src="https://i.ibb.co/37sVsBX/disco.png" alt="discover" />
                 </button>
               </Link>
+              <a>Discover</a>
             </li>
            </ul> 
             <li className={styles.li}>
