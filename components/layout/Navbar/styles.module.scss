@@ -12,10 +12,6 @@
     display: flex;
     align-items: flex-start;
   }
-
-  .profile_img{
-    filter: brightness(0) invert(0.7);
-  }
   
   .links{
     display: flex;
@@ -64,7 +60,8 @@
     padding: 7px 0px 7px 10px
   }
   .li:hover {
-  background: white
+  background: white;
+    border-radius: 12px;
   }
   
   .link_btn{
@@ -72,7 +69,6 @@
     height: 24px;
     color: white;
     border: none;
-    border-radius: 7.5px;
     margin-right: 12px;
     &:hover{
       background-color: rgb(60, 60, 60);
@@ -81,7 +77,6 @@
     img{
       height: 24px;
       width: 24px;
-      border-radius: 7.5px;
     }
   }
   
