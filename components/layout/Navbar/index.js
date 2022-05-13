@@ -33,15 +33,38 @@ export default function Navbar() {
                <li className={styles.li}>
                 <Link href={`/${username}`}>
                   <button className={styles.link_btn}>
-                  <img src="https://i.imgur.com/CuDMssO.png" alt="profile" className={styles.profile_img}></img>
+                  <img src="https://i.ibb.co/pfRftQR/users.png" alt="profile" className={styles.profile_img}></img>
                 </button>
                 </Link>
-                <a>User profile</a>
+                <a>Profile</a>
               </li>
               :
               ''
              }
-           
+           <li className={styles.li}>
+              <Link href="/messages">
+                <button className={styles.link_btn}>
+                  <img src="https://i.ibb.co/tZ2w2TJ/chat.png" alt="Messages"></img>
+                </button>
+              </Link>
+              <a>Messages</a>
+            </li>
+            <li className={styles.li}>
+              <Link href="/bookmarks">
+                <button className={styles.link_btn}>
+                  <img src="https://i.ibb.co/JC84QnL/bookmark.png" alt="Bookmarks"></img>
+                </button>
+              </Link>
+              <a>Bookmarks</a>
+            </li>
+            <li className={styles.li}>
+              <Link href="/settings">
+                <button className={styles.link_btn}>
+                  <img src="https://i.ibb.co/LS4kHrx/settings-2.png" alt="Settings"></img>
+                </button>
+              </Link>
+              <a>Settings</a>
+            </li>
            </ul>
             <div className={styles.seperator}/>
            <ul className={styles.ul_community_specific}>
