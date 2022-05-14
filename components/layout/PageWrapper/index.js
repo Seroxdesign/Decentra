@@ -13,11 +13,10 @@ export default function PageWrapper(props) {
    <div className={styles.active_communitylogo}></div>
     <a className={styles.active_communityname}>Decentra</a>
    </div>
-
- <div className={styles.horizontal_navbarcontentright}>
    <div className={styles.searchbar_wrapper}>
     <button className={styles.searchbar}>Search</button>
    </div>
+ <div className={styles.horizontal_navbarcontentright}>
     <button className={styles.createpost}>+ Create</button>
     <div className={styles.active_directmessages}/>
     <div className={styles.active_notifications}/>
