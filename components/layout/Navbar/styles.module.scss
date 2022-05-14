@@ -28,8 +28,8 @@
   .ul{
     display: flex;
     width: 220px;
-    margin-top: 11.5px;
-    padding-left: 10px;
+    margin-top: 20px;
+    padding-left: 22px;
   }
   .ul_universal {
     display:flex;
@@ -50,10 +50,11 @@
   
   .li{
     width: 100%;
-    margin: 4.5px 0;
+    margin: 0.5px 0;
     display: flex;
     align-items: center;
-    padding: 7px 0px 7px 10px
+    padding: 7px 0 7px 10px;
+    color: #42464d;
   }
   .li:hover {
   background: white;
@@ -61,18 +62,17 @@
   }
   
   .link_btn{
-    width: 24px;
-    height: 24px;
+    width: 23px;
+    height: 23px;
     color: white;
     border: none;
     margin-right: 12px;
-    &:hover{
-      background-color: rgb(60, 60, 60);
-    }
+    background: transparent;
+    font-size: 17px;
   
     img{
-      height: 24px;
-      width: 24px;
+      height: 23px;
+      width: 23px;
     }
   }
   
