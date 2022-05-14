@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import EditProfileModal from './EditProfileModal';
 import { UserContext } from "../../../lib/context";
 import { LinkList } from '../LinkList';
+import { WalletEthers } from '@components/helpers/ConnectWallet';
 import styles from './styles.module.scss';
 import CreateLink from '../CreateLink';
 import ReactMarkdown from 'react-markdown';
@@ -15,9 +16,6 @@ export default function UserProfile({ user, links }) {
 
   const [editor, setEditor] = useState(false)
   const [editOpen, setEditOpen] = useState(false)
-
-  const [address, setAddress] = useState(false)
-  const [network, setNetwork] = useState(false)
 
   useEffect(() => {
     if(admin.username === username){
@@ -68,7 +66,14 @@ export default function UserProfile({ user, links }) {
         }
 
         {
-          editor ? <button onClick={() => setEditOpen(true)}>Edit</button> : ''
+          editor ? 
+          <>
+            <button onClick={() => setEditOpen(true)}>Edit</button> 
+            <WalletEthers />
+          </>
+
+          : 
+          ''
         }
       </div>
 
