@@ -48,7 +48,7 @@
       display: flex;
   }
   .searchbar {
-    width: 45.5vw;
+    width: 660px;
     background: #f2f2f2;
     color: #595959;
     text-align: left;
@@ -56,6 +56,7 @@
     border: 0;
     font-size: 16px;
     border-radius: 7.5px;
+    margin: auto;
   }
   
     .horizontal_navbarcontentright {
