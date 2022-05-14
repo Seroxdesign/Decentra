@@ -41,6 +41,7 @@
     align-items: center;
     height: 60px;
     display: flex;
+    gap: 12px;
   }
   
   .searchbar {
@@ -67,7 +68,14 @@
     background-size: cover;
     width: 35px;
     border-radius: 7.5px;
-    margin-right: 10px;
+  }
+  
+  .active_login {
+    background-image: url(https://i.ibb.co/pfRftQR/users.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
   }
   
  
