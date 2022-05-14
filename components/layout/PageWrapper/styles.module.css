@@ -78,6 +78,22 @@
     background-size: cover;
   }
   
+  .active_directmessages {
+    background-image: url(https://i.ibb.co/tZ2w2TJ/chat.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
+  }
+  
+  .active_notifications {
+    background-image: url(https://i.ibb.co/JC84QnL/bookmark.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
+  }
+  
  
 }
 
