@@ -17,12 +17,14 @@ export default function PageWrapper(props) {
 <div className={styles.horizontal_navbarcontentright}>
   <button className={styles.searchbar}>Search</button>
   <button className={styles.createpost}>+ New post</button>
-    <div className={styles.active_directmessages}/>
-    <div className={styles.active_notifications}/>
-  <div>
+  <div className={styles.active_directmessages}/>
+  <div className={styles.active_notifications}/>
+  
+  <div className={styles.horizontal_navbarcontent}>
     <div className={styles.active_login}/>
     <a>Log In</a>
   </div>
+
 </div>
 
   </div>
