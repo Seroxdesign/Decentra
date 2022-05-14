@@ -33,10 +33,10 @@ export default function Navbar() {
                <li className={styles.li}>
                 <Link href={`/${username}`}>
                   <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/pfRftQR/users.png" alt="profile" className={styles.profile_img}></img>
+                  🏠
                 </button>
                 </Link>
-                <a>Profile</a>
+                <a>Home</a>
               </li>
               :
               ''
@@ -44,11 +44,12 @@ export default function Navbar() {
            <li className={styles.li}>
               <Link href="/messages">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/tZ2w2TJ/chat.png" alt="Messages"></img>
+                  📅
                 </button>
               </Link>
-              <a>Messages</a>
+              <a>Events</a>
             </li>
+            <div className={styles.category_name}><b>General</b></div>
             <li className={styles.li}>
               <Link href="/bookmarks">
                 <button className={styles.link_btn}>
