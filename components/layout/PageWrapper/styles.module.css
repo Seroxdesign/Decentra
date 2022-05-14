@@ -43,7 +43,10 @@
     display: flex;
     gap: 12px;
   }
-  
+  .searchbar_wrapper {
+      margin-left: 128px;
+      display: flex;
+  }
   .searchbar {
     width: 45.5vw;
     background: #f2f2f2;
