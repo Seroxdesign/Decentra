@@ -67,7 +67,7 @@ export default function Navbar() {
               <a>Settings</a>
             </li>
            </ul>
-            <div className={styles.seperator}/>
+            <div className={styles.category_name}><b>Resources</b></div>
            <ul className={styles.ul_community_specific}>
              <li className={styles.li}>
               <Link href="/Admin">
