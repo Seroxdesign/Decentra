@@ -3,7 +3,6 @@ import { auth, firestore } from '../../../../lib/firebase';
 import TextField from '@components/forms/assets/TextField';
 import ImageUploader from '@components/layout/ImageUploader';
 import toast from 'react-hot-toast';
-import { WalletConnector } from '@components/web3/ConnectWallet';
 import {useRouter} from 'next/router'
 import styles from './styles.module.scss';
 import ReactMarkdown from 'react-markdown';
@@ -107,7 +106,6 @@ export default function EditProfileModal({user, handleOnClick}) {
             value={organization}
           />
         </div>
-
         <button >Save Changes</button>
       </form>
 

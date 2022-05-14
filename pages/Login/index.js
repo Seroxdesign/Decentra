@@ -77,9 +77,7 @@ function UsernameForm() {
   const [fullName, setFullName] = useState('Decentra User');
   const [banner, setBanner] = useState('https://i.imgur.com/sm6ziwz.png');
   const [profilePic, setPic] = useState('https://i.imgur.com/kQGPkcN.png');
-  const [walletAddress, setAddress] = useState('');
-  const [network, setNetwork] = useState('');
-  const [bio, setBio] = useState('https://i.imgur.com/kQGPkcN.png');
+  const [bio, setBio] = useState('Say something about yourself');
   const [isValid, setIsValid] = useState(false);
   const [loading, setLoading] = useState(false);
   const router = useRouter();
@@ -90,7 +88,6 @@ function UsernameForm() {
   const onSubmit = async (e) => {
     e.preventDefault();
     valid = fullName !== "" && bio !== "";
-    console.log(formValue, profilePic, fullName, banner, bio, walletAddress, network)
     if(valid){
       // Create refs for both documents
       const userDoc = firestore.doc(`users/${user.uid}`);
@@ -98,12 +95,15 @@ function UsernameForm() {
 
       // Commit both docs together as a batch write.
       const batch = firestore.batch();
-      batch.set(userDoc, { username: formValue, photoURL: profilePic, displayName: fullName, banner, bio: '', walletAddress, network});
+      batch.set(userDoc, { username: formValue, photoURL: profilePic, displayName: fullName, banner, bio: ''});
       batch.set(usernameDoc, { uid: user.uid });
 
       await batch.commit();
       toast.success('Welcome to Decentra.')
       router.push(`/`)
+    }
+    else{
+      toast.error('This isnt working', console.log(formValue, profilePic, fullName, banner, bio))
     }
   };
 
@@ -173,14 +173,8 @@ function UsernameForm() {
           <label>Profile Pic</label>
           <ImageUploader placeImage={setPic}/>
   
-          <label>Connect your wallet address</label>
-          <p>
-            This will allow you to take payments / donations
-          </p>
-          <WalletEthers connect={setAddress} setNetwork={setNetwork}/>
-          <hr></hr>
           <button type="submit" className={styles.username_btn} disabled={!isValid}  onClick={onSubmit}>
-            Submit
+            {!isValid ? 'Complete form' : 'Submit'}
           </button>
         </div>
       </section>

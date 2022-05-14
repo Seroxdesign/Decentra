@@ -28,13 +28,13 @@
       text-decoration: none;
       cursor: pointer;
       transition: 0.5s;
-      
+     
       &:hover{
         color: rgb(255, 255, 255);
       }      
     }
     h3{
-      font-size: 22px
+      font-size: 22px;
     }
     strong{
       color: #939290; 
@@ -104,14 +104,17 @@
   
   .card{
     min-height: 15vh;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-top: 2em;
     width: 100%;
     background-color: #272522;
     display: flex;
     flex-direction: column;
 
     border-bottom: 1px solid rgb(53, 53, 53);
+    h3{
+      margin-top: 1em;
+    }
 
     a{
       color: rgba(255, 255, 255, 0.635);
@@ -119,7 +122,7 @@
       margin-top: 1em;
       cursor: pointer;
       transition: 0.5s;
-      
+      margin-right: 1em;
       &:hover{
         color: rgb(255, 255, 255);
       }
@@ -138,11 +141,13 @@
       min-width: 100%;
       margin-right: 1em;
       border-radius: 12px;
+      margin-bottom: 1em;
     }
 
     footer{
       margin-top: 1em;
       color: white;
+      margin-bottom: 1en;
     }
   }
 }

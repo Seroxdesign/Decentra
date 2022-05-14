@@ -101,6 +101,7 @@ export default function Navbar() {
            </ul>
                        <div className={styles.seperator}/>
            <ul className={styles.ul_actions}> 
+
             <li className={styles.li}>
               <Link href="/Communities">
                 <button className={styles.link_btn}>
