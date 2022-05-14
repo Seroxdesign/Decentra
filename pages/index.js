@@ -32,9 +32,7 @@ export default function index({posts, links}) {
     <main className={styles.main}>
       <div className={styles.left_main}>
         <AuthCheck>
-       
-        <h3>Welcome to decentra</h3>
-        <h3>Our Links</h3>
+
         <div className={styles.main_grid}>
           <LinkList links={links}/>
         </div>  
