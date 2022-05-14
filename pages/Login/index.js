@@ -105,6 +105,9 @@ function UsernameForm() {
       toast.success('Welcome to Decentra.')
       router.push(`/`)
     }
+    else{
+      toast.error('This isnt working', console.log(formValue, profilePic, fullName, banner, bio, walletAddress, network))
+    }
   };
 
   const onChange = (e) => {
