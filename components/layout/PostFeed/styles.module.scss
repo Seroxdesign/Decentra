@@ -88,10 +88,6 @@
 @media screen and (max-width: 786px) {
   
   .long_block{
-
-    background-color: #272522;
-    padding: 1em;
-    border-radius: 25px 25px 0px 0px;
     min-height: 100%;
 
     hr{
@@ -107,11 +103,10 @@
     padding-bottom: 2em;
     padding-top: 2em;
     width: 100%;
-    background-color: #272522;
+    background-color: white;
     display: flex;
     flex-direction: column;
-
-    border-bottom: 1px solid rgb(53, 53, 53);
+    margin-bottom:30px;
     h3{
       margin-top: 1em;
     }
@@ -136,6 +131,22 @@
     strong{
       color: rgba(255, 255, 255, 0.499); 
     }
+    
+      .post_details {
+      margin-bottom: 0.75em;
+      color: #939290;
+    img {
+    width: 21px;
+    min-width: 0px;
+    margin-top: 0px;
+    border-radius: 5px;
+    margin-bottom: -5px;
+    margin-right: 8px;
+    }
+    span {
+      margin-left: 20px;
+    }
+  }
 
     img{
       min-width: 100%;
