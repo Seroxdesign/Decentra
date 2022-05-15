@@ -2,7 +2,7 @@
 
 @media screen and (max-width: 786px) {
   ///different style on mobile for home page
-  .links_community .link_block {
+  .link_block {
     width: 100%;
     padding: 1em;
     display: flex;
@@ -27,7 +27,7 @@
 
   }
   
-  .link_block{
+  .profile .link_block{
     height: 60px;
     width: 60px;
     padding: 1em;
@@ -50,7 +50,7 @@
     }
   }
 
-  .icon{
+  .profile .icon{
     border: 2px solid rgb(86, 86, 86);
     background-color: rgb(86, 86, 86);
     padding: 0.5em;
