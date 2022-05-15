@@ -2,7 +2,8 @@
 
 @media screen and (max-width: 786px) {
   
-    .profile .link_block{
+  .profile{
+    .link_block{
     height: 60px;
     width: 60px;
     padding: 1em;
@@ -25,7 +26,7 @@
     }
   }
 
-  .profile .icon{
+  .icon{
     border: 2px solid rgb(86, 86, 86);
     background-color: rgb(86, 86, 86);
     padding: 0.5em;
@@ -35,6 +36,7 @@
       max-height: 35px;
       margin-bottom: 0.5em;
     }
+  }
   }
   
   ///different style on mobile for home page
