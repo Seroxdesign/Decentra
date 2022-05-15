@@ -24,14 +24,10 @@
     box-shadow: 0 5px 4px 0 #e4e1db;
     margin-bottom: 30px;
     a{
-      color: black;
+      color: #333;
       text-decoration: none;
       cursor: pointer;
       transition: 0.5s;
-     
-      &:hover{
-        color: rgb(255, 255, 255);
-      }      
     }
     h3{
       font-size: 22px;
@@ -116,15 +112,12 @@
     }
 
     a{
-      color: rgba(255, 255, 255, 0.635);
+      color: #333;
       text-decoration: none;
       margin-top: 1em;
       cursor: pointer;
       transition: 0.5s;
       margin-right: 1em;
-      &:hover{
-        color: rgb(255, 255, 255);
-      }
 
       span{
         margin-left: 1em;
