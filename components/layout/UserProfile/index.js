@@ -8,6 +8,7 @@ import styles from './styles.module.scss';
 import CreateLink from '../CreateLink';
 import FeedTab from './FeedTab';
 import ReactMarkdown from 'react-markdown';
+import AdminPostEdit from 'pages/Admin/[slug]';
 
 // UI component for user profile
 export default function UserProfile({ user, links }) {
@@ -92,11 +93,16 @@ export default function UserProfile({ user, links }) {
       </p>
 
       <div className={styles.main_grid}>
-        {
-          editor ?  <CreateLink /> : ''
-        }
+       
        
        <FeedTab setTab={setTab} links={'links'} images={'images'} posts={'posts'} events={'events'}/>
+
+       {
+          editor ? 
+          <CreateLink /> 
+          : 
+          ''
+        }
 
        {
          tabState === 'links' ?

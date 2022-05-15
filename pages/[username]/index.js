@@ -23,6 +23,8 @@ export async function getServerSideProps({query}){
   let user = null;
   let posts = null;
   let links = null;
+  let images = null;
+
 
   if(userDoc) {
     console.log('working', userDoc)
@@ -33,7 +35,15 @@ export async function getServerSideProps({query}){
       .orderBy('createdAt', 'desc')
       .limit(5);
 
+    const imagesQuery = userDoc.ref
+      .collection('images')
+      .where('published', '==', true)
+      .orderBy('createdAt', 'desc')
+      .limit(6);
+
     posts = (await postsQuery.get()).docs.map(postToJSON);
+
+    images = (await imagesQuery.get()).docs.map(postToJSON)
 
     const linksQuery = userDoc.ref
         .collection('links')
@@ -42,22 +52,20 @@ export async function getServerSideProps({query}){
   }  
   
   return {
-    props: {user, posts, links},
+    props: {user, posts, links, images},
   }
 }
 
 
 
-export default function UserProfilePage({ user, posts, links}) {
+export default function UserProfilePage({ user, posts, links, images}) {
   console.log(links)
   
   return (
     <AuthCheck>
        <main className={styles.main}>
         <Metatags title={user.username} description={`${user.username}'s public profile`} />
-        <UserProfile user={user} links={links}/>
-         
-        <PostFeed posts={posts} />
+        <UserProfile user={user} links={links} posts={posts} images={images}/>
       </main>
     </AuthCheck> 
   )
