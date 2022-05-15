@@ -1,33 +1,8 @@
 
 
 @media screen and (max-width: 786px) {
-  ///different style on mobile for home page
-  .link_block {
-    width: 100%;
-    padding: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-    border-radius: 12px;
-    background: white;
-    
-        h2{
-          display: block;
-          font-size: 16px;
-          color: #42464d;
-          font-weight: normal;    
-    }
   
-    h5{
-      color: rgb(100, 100, 100);
-      display: none;
-    }
-
-  }
-  
-  .profile .link_block{
+    .profile .link_block{
     height: 60px;
     width: 60px;
     padding: 1em;
@@ -61,6 +36,33 @@
       margin-bottom: 0.5em;
     }
   }
+  
+  ///different style on mobile for home page
+  .link_block {
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    border-radius: 12px;
+    background: white;
+    
+        h2{
+          display: block;
+          font-size: 16px;
+          color: #42464d;
+          font-weight: normal;    
+    }
+  
+    h5{
+      color: rgb(100, 100, 100);
+      display: none;
+    }
+
+  }
+
 }
 
 @media screen and (min-width: 786px) {
