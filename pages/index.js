@@ -34,7 +34,9 @@ export default function index({posts, links}) {
         <AuthCheck>
 
         <div className={styles.main_grid}>
-          <LinkList links={links}/>
+          <div className={styles.links_community}
+            <LinkList links={links}/>
+          </div>
         </div>  
         <PostFeed posts={posts}/>
         </AuthCheck>
