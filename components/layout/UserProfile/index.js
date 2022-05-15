@@ -6,6 +6,7 @@ import { LinkList } from '../LinkList';
 import { WalletEthers } from '@components/helpers/ConnectWallet';
 import styles from './styles.module.scss';
 import CreateLink from '../CreateLink';
+import FeedTab from './FeedTab';
 import ReactMarkdown from 'react-markdown';
 
 // UI component for user profile
@@ -16,6 +17,8 @@ export default function UserProfile({ user, links }) {
 
   const [editor, setEditor] = useState(false)
   const [editOpen, setEditOpen] = useState(false)
+
+  const [tabState, setTab] = useState(false)
 
   useEffect(() => {
     if(admin.username === username){
@@ -93,8 +96,24 @@ export default function UserProfile({ user, links }) {
           editor ?  <CreateLink /> : ''
         }
        
-        <LinkList links={links}/>
+       <FeedTab setTab={setTab} links={'links'} images={'images'} posts={'posts'} events={'events'}/>
 
+       {
+         tabState === 'links' ?
+         <LinkList links={links}/>
+         :
+         tabState === 'posts' ?
+         ''
+         :
+         tabState === 'images' ?
+         ''
+         :
+         tabState === 'events' ?
+         ''
+         :
+         ''
+       }
+  
       </div>
       
     </div>
