@@ -2,44 +2,7 @@
 
 @media screen and (max-width: 786px) {
   
-  .profile{
-    .link_block{
-    height: 60px;
-    width: 60px;
-    padding: 1em;
-    display: flex;
-    margin: 0.5em;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-decoration: none;
-    border-radius: 12px;
-    color: #b4b3b2;
-  
-    h2{
-      display: none;
-    }
-  
-    h5{
-      color: rgb(100, 100, 100);
-      display: none;
-    }
-  }
-
-  .icon{
-    border: 2px solid rgb(86, 86, 86);
-    background-color: rgb(86, 86, 86);
-    padding: 0.5em;
-    width: 70px;
-    img{
-      max-width: 100px;
-      max-height: 35px;
-      margin-bottom: 0.5em;
-    }
-  }
-  }
-  
-  ///different style on mobile for home page
+  ///different style on mobile for user profile still needs to be done
   .link_block {
     width: 100%;
     padding: 1em;
@@ -63,6 +26,14 @@
       display: none;
     }
 
+  }
+  
+    .icon{
+    img{
+      max-width: 100px;
+      max-height: 35px;
+      margin-bottom: 0.5em;
+    }
   }
 
 }
