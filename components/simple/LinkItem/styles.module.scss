@@ -13,12 +13,17 @@
     text-decoration: none;
     border-radius: 12px;
     background: white;
+    box-shadow: 0 5px 4px 0 #e4e1db;
     
-        h2{
+    h2{
           display: block;
           font-size: 16px;
           color: #42464d;
           font-weight: normal;    
+    }
+    
+    &:hover{
+    background-color: #ededed;
     }
   
     h5{
@@ -56,6 +61,8 @@
     h2{
       font-size: inherit;
       margin-bottom: 0em;
+      color: #42464d;
+      font-weight: normal;  
     }
   
     h5{
