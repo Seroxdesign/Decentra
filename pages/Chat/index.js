@@ -29,8 +29,6 @@ export default function Chat() {
     
   }
 
-  console.log(messages)
-
   return (
     <AuthCheck>
       <div>
