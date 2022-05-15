@@ -94,14 +94,19 @@
     }    
   }
   
+  .content_preview{
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
   .preview{
     color: #42464d;
   }
   
   .card{
     min-height: 15vh;
-    padding-bottom: 2em;
-    padding-top: 2em;
+    padding: 20px 0 15px;
     width: 100%;
     background-color: white;
     display: flex;
