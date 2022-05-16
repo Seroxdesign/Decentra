@@ -31,6 +31,9 @@
       color: #333;
       transition: 0.5s;
     }
+    p {
+    line-height: 0;
+    }
     h3{
       font-size: 22px;
     }
@@ -132,6 +135,9 @@
         margin-left: 1em;
         color: rgba(211, 211, 211, 0.519);
       }
+    }
+    p {
+    line-height: 0;
     }
 
     strong{
