@@ -33,7 +33,7 @@ export default function Navbar() {
                <li className={styles.li}>
                 <Link href={`/${username}`}>
                   <button className={styles.link_btn}>
-                  🏠
+                  🏡
                 </button>
                 </Link>
                 <a>Home</a>
@@ -129,6 +129,9 @@ export default function Navbar() {
           mobileMenu ? 
           <button className={styles.mobile_control} onClick={() => {toggleMenu(false)}}>
             <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+          </button>
+           <button className={styles.mobile_control}>
+            🏡
           </button>
           :
           <button className={styles.mobile_control} onClick={() => {toggleMenu(true)}}>
