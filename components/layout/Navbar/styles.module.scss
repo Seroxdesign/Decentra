@@ -184,21 +184,22 @@
     }
   }
 
+  .ulmobile {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
   .mobile_control{
-    max-height: 30px;
-    min-height: 25px;
-    height: 5vh;
-    width: 20vw;
-    min-width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111111;
+    background-color: transparent;
     border: none;
     border-radius: 12px; 
+    font-size: 20px;
  
     img{
-      filter: brightness(0) invert(1);
       height: 3vh;
       max-height: 20px;
       min-height: 15px;
