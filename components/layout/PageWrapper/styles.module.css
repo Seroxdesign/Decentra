@@ -145,7 +145,7 @@
     display: flex;
       gap: 40px;
   }
-  .active_directmessages, .active_notifications, .horizontal_navbarcontentlogin {
+  .active_directmessages, .active_notifications, .horizontal_navbarcontentlogin, .searchbar_wrapper {
   display: none;
   }
     .createpost {
