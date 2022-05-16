@@ -55,35 +55,51 @@ export default function Navbar() {
                 <button className={styles.link_btn}>
                    📜
                 </button>
-               <a>Our mission</a>
               </Link>
+             <a>Our mission</a>
             </li>
             <li className={styles.li}>
               <Link href="/settings">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/LS4kHrx/settings-2.png" alt="Settings"></img>
+                   🙋
                 </button>
               </Link>
-              <a>Settings</a>
+              <a>FAQ</a>
+            </li>
+            <li className={styles.li}>
+              <Link href="/announcements">
+                <button className={styles.link_btn}>
+                   📢
+                </button>
+              </Link>
+              <a>Announcements</a>
+            </li>
+            <li className={styles.li}>
+              <Link href="/our-team">
+                <button className={styles.link_btn}>
+                   👥
+                </button>
+              </Link>
+              <a>Our team</a>
             </li>
            </ul>
             <div className={styles.category_name}><b>Resources</b></div>
            <ul className={styles.ul_community_specific}>
              <li className={styles.li}>
-              <Link href="/Admin">
+              <Link href="/blog">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/f4VvhFp/house.png" alt="Create"></img>
+                   📰
                 </button>
               </Link>
-              <a>Home</a>
+              <a>Blog</a>
             </li>
             <li className={styles.li}>
-              <Link href="/">
+              <Link href="/guides">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/7zhc5Vr/calendar.png" alt="Forum"/>
+                   📚
                 </button>
               </Link>
-              <a>Events</a>
+              <a>Guides</a>
             </li>
            </ul>
             <div className={styles.seperator}/>
