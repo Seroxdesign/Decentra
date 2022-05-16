@@ -134,9 +134,6 @@ export default function Navbar() {
           <button className={styles.mobile_control} onClick={() => {toggleMenu(true)}}>
             <img src="https://i.imgur.com/rhTxXmI.png" alt="open mobile menu"/>
           </button>
-          <a href="/404">
-            🏡
-          </a>
         }
         
 
