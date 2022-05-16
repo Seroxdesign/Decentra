@@ -137,19 +137,19 @@ export default function Navbar() {
         }
         
           <button className={styles.mobile_control}>
-            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+            🏡
           </button>
           
           <button className={styles.mobile_control}>
-            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+            💬
           </button>
           
           <button className={styles.mobile_control}>
-            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+            👥
           </button>
           
           <button className={styles.mobile_control}>
-            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+            👥
           </button>
 
         {/* user is not signed OR has not created username */}
