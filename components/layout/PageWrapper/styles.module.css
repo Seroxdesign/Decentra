@@ -43,6 +43,13 @@
     display: flex;
     gap: 12px;
   }
+  
+    .horizontal_navbarcontentlogin {
+    align-items: center;
+    height: 60px;
+    display: flex;
+    gap: 12px;
+  }
   .searchbar_wrapper {
       margin-left: 128px;
       display: flex;
