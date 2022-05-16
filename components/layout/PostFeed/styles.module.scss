@@ -85,6 +85,10 @@
 
 @media screen and (max-width: 786px) {
   
+  a {
+  text-decoration: none;
+  }
+  
   .long_block{
     min-height: 100%;
     
@@ -122,8 +126,6 @@
 
     a{
       color: #333;
-      text-decoration: none;
-      cursor: pointer;
       transition: 0.5s;
 
       span{
