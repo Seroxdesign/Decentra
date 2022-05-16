@@ -10,7 +10,7 @@
     max-width: 960px;
     
     h2{
-      color: rgb(187, 183, 183);
+      color: #333;
       font-size: 20px;
       margin-bottom: 25px;
     }
@@ -86,12 +86,11 @@
   .long_block{
     min-height: 100%;
 
-    hr{
-      margin-top: 1em;
-      border: none;
-      height: 1.35px;
-      background: #3d3b39;
-    }    
+    h2 {
+      padding: 20px 0;
+      font-size: 20px;
+      color: #333;
+    }  
   }
   
   .content_preview{
