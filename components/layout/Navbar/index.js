@@ -124,7 +124,7 @@ export default function Navbar() {
             </li>
           </div>
         )}
-
+      <ul className={styles.ulmobile}>
         {
           mobileMenu ? 
           <button className={styles.mobile_control} onClick={() => {toggleMenu(false)}}>
@@ -151,7 +151,7 @@ export default function Navbar() {
           <button className={styles.mobile_control}>
             👥
           </button>
-
+       </ul>
         {/* user is not signed OR has not created username */}
       
       </ul>
