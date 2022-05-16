@@ -8,14 +8,13 @@
   .main{
     height: 100%;
     display: grid;
-    grid-template-columns: 720px 300px;
-    width: 1048px;
+    grid-template-columns: 660px 300px;
+    width: 988px;
     margin: auto;
     grid-gap: 28px;
-    padding-right: 5vw;
   }
   .left_main {
-  padding-top: 1em;
+  padding-top: 25px;
   }
   
   .main_grid{
@@ -49,10 +48,6 @@
 
 
 @media screen and (max-width: 786px) {
-  .main{
-    height: 90vh;
-    overflow-y: scroll;
-  }
 
   .main_grid{
     display: grid;
@@ -60,18 +55,8 @@
     grid-gap: 1em;
     grid-row-gap: 22.5px;
     max-height: 100vh;
-    padding: 0.5em;
-    padding-bottom: 1em;
+    padding: 1em .5em 1em;
     width: 100%;
-  }
-
-  .left_main{
-    
-    h3{
-      margin-top: 1em;
-      margin-left: 1em;
-      margin-bottom: 1em;
-    }
   }
   
   .long_block{

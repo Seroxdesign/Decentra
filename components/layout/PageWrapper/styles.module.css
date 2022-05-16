@@ -5,27 +5,118 @@
     top: 0;
     height: 100vh;
     width: 100vw;
-    background-color: #272522;
+    background-color: #f2f2f2;
+    overflow-y: scroll;
+
   }
   
   .inner_container{
-    margin-left: 66px;
-    width: calc(100% - 66px);
-    background-color:  #2E2B29;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    background-color: #f2f2f2;
     height: 100%;
   }
+  
+  .horizontal_navbar {
+    height: 60px;
+    background: white;
+    position: sticky;
+    top: 0px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between; 
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .createpost {
+    box-shadow: 0 0.25px 3px rgb(70 71 72 / 28%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+    background: white;
+    border: 0px;
+    padding: 8px 19px;
+    border-radius: 7.5px;
+    font-size: 16px;
+  }
+  
+  .horizontal_navbarcontent {
+    align-items: center;
+    height: 60px;
+    display: flex;
+    gap: 12px;
+  }
+  .searchbar_wrapper {
+      margin-left: 128px;
+      display: flex;
+  }
+  .searchbar {
+    width: 660px;
+    background: #f2f2f2;
+    color: #595959;
+    text-align: left;
+    padding: 8px 19px;
+    border: 0;
+    font-size: 16px;
+    border-radius: 7.5px;
+    margin: auto;
+  }
+  
+    .horizontal_navbarcontentright {
+    align-items: center;
+    height: 60px;
+    display: flex;
+      gap: 40px;
+  }
+  
+  .active_communitylogo {
+    background-image: url(https://i.imgur.com/YeqM8du.png);
+    height: 35px;
+    background-size: cover;
+    width: 35px;
+    border-radius: 7.5px;
+  }
+  
+  .active_login {
+    background-image: url(https://i.ibb.co/pfRftQR/users.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
+  }
+  
+  .active_directmessages {
+    background-image: url(https://i.ibb.co/tZ2w2TJ/chat.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
+  }
+  
+  .active_notifications {
+    background-image: url(https://i.ibb.co/JC84QnL/bookmark.png);
+    border-radius: 0px;
+    height: 23px;
+    width: 23px;
+    background-size: cover;
+  }
+  
  
 }
 
 @media screen and (max-width: 786px) {
   .inner_container{
     width: 100vw;
-    background-color:  #2E2B29;
+    background-color: #f2f2f2;
     height: 100%;
-    margin-top: 60px;
     overflow-y: hidden;
     color: rgb(229, 229, 229);
+  }
+  .horizontal_navbar {
+    height: 60px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
   }
 }

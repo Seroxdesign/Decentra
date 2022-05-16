@@ -1,47 +1,53 @@
 
 
 @media screen and (max-width: 786px) {
-  .link_block{
-    height: 60px;
-    width: 60px;
+  
+  ///different style on mobile for user profile still needs to be done
+  .link_block {
+    width: 100%;
     padding: 1em;
     display: flex;
-    margin: 0.5em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-decoration: none;
     border-radius: 12px;
-    color: #b4b3b2;
-  
+    background: white;
+    box-shadow: 0 5px 4px 0 #e4e1db;
+    
     h2{
-      display: none;
+          display: block;
+          font-size: 16px;
+          color: #42464d;
+          font-weight: normal;    
+    }
+    
+    &:hover{
+    background-color: #ededed;
     }
   
     h5{
       color: rgb(100, 100, 100);
       display: none;
     }
-  }
 
-  .icon{
-    border: 2px solid rgb(86, 86, 86);
-    background-color: rgb(86, 86, 86);
-    padding: 0.5em;
-    width: 70px;
+  }
+  
+    .icon{
     img{
       max-width: 100px;
       max-height: 35px;
       margin-bottom: 0.5em;
     }
   }
+
 }
 
 @media screen and (min-width: 786px) {
   .link_block{
     height: 154px;
     width: 100%;
-    background-color: #272522;
+    background-color: white;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -49,12 +55,14 @@
     flex-direction: column;
     text-decoration: none;
     border-radius: 7.5px;
-    box-shadow: 0 5px 4px 0px #1d1c1a;
+    box-shadow: 0 5px 4px 0 #e4e1db;
     color: #b4b3b2;
   
     h2{
       font-size: inherit;
       margin-bottom: 0em;
+      color: #42464d;
+      font-weight: normal;  
     }
   
     h5{
@@ -64,7 +72,7 @@
   }
   
   .link_block:hover{
-    background-color: #212120;
+    background-color: #ededed;
   }
   
   .white_icon{

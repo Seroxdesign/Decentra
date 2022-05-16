@@ -28,12 +28,17 @@ function PostItem({post, admin = false}) {
   const minutesToRead = (wordCount / 100 + 1).toFixed(0);
 
   return (
+   <a href={`/${post.username}/${post.slug}`}>   
     <div className={styles.card}>
 
       <div className={styles.content_preview}>
           
         <div className={styles.post_details}>
-        <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg"/>
+        <Link href={`/${post.username}`}>
+           <a> 
+            <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg"/>
+           </a> 
+        </Link>
         <Link href={`/${post.username}`}>
           <a>
             <strong>{post.username}</strong>
@@ -72,5 +77,6 @@ function PostItem({post, admin = false}) {
       )}
 
   </div>
+ </a>  
   );
 }
