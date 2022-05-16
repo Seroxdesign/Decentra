@@ -77,7 +77,7 @@
   .action {
     margin-top: 15px;
     padding: 0 20px;
-    color: rgb(187, 183, 183);
+    color: #42464d;
   }
 }
 
@@ -85,6 +85,7 @@
   
   .long_block{
     min-height: 100%;
+    padding: 8px;
 
     h2 {
       padding: 20px 0;
@@ -103,6 +104,11 @@
     color: #42464d;
     margin-top: 0.75em;
   }
+  .action {
+    margin-top: 15px;
+    padding: 0 20px;
+    color: #42464d;
+  }
   
   .card{
     min-height: 15vh;
@@ -112,6 +118,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom:30px;
+    border-radius: 12px;
 
     a{
       color: #333;
