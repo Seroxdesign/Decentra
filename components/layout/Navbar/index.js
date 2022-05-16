@@ -29,15 +29,14 @@ export default function Navbar() {
            <ul className={styles.ul_universal}>
              {
                username ? 
-
+              <a href="/">
                <li className={styles.li}>
-                <Link href={`/${username}`}>
                   <button className={styles.link_btn}>
                   🏡
                 </button>
-                </Link>
                 <a>Home</a>
               </li>
+             </a> 
               :
               ''
              }
@@ -163,10 +162,11 @@ export default function Navbar() {
           <button className={styles.mobile_control}>
             👥
           </button>
-          
+          <a href={`/${username}`}>
           <button className={styles.mobile_control}>
             👥
           </button>
+          </a>
        </ul>
         {/* user is not signed OR has not created username */}
       
