@@ -49,14 +49,14 @@ export default function Navbar() {
               </Link>
               <a>Events</a>
             </li>
-            <div className={styles.category_name}><b>General</b></div>
+            <div className={styles.category_name}><b>Get Started</b></div>
             <li className={styles.li}>
-              <Link href="/bookmarks">
+              <Link href="/our-mission">
                 <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/JC84QnL/bookmark.png" alt="Bookmarks"></img>
+                   📜
                 </button>
+               <a>Our mission</a>
               </Link>
-              <a>Bookmarks</a>
             </li>
             <li className={styles.li}>
               <Link href="/settings">
