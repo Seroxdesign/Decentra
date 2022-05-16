@@ -110,4 +110,14 @@
     overflow-y: hidden;
     color: rgb(229, 229, 229);
   }
+  .horizontal_navbar {
+    height: 60px;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+  }
 }
