@@ -19,6 +19,7 @@ export default function PageWrapper(props) {
  <div className={styles.horizontal_navbarcontentright}>
     <a href="Admin">
       <button className={styles.createpost}>+ Create</button>
+      <button className={styles.createpostmobile}>+</button>
     </a>
     <div className={styles.active_directmessages}/>
     <div className={styles.active_notifications}/>
