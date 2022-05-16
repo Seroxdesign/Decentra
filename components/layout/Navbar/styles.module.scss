@@ -143,6 +143,12 @@
     justify-content: space-between;
     background-color: white;
     border-top: 1px solid #eee;
+    
+  .ulmobile {
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
     .links{
       display: none;
@@ -182,12 +188,6 @@
         }
       }
     }
-  }
-
-  .ulmobile {
-    padding: 0;
-    flex-direction: row;
-    justify-content: space-between;
   }
   
   .mobile_control{
