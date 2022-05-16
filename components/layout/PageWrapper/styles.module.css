@@ -36,6 +36,9 @@
     border-radius: 7.5px;
     font-size: 16px;
   }
+  .createpostmobile {
+  display: none;
+  }
   
   .horizontal_navbarcontent {
     align-items: center;
@@ -145,10 +148,10 @@
     display: flex;
       gap: 40px;
   }
-  .active_directmessages, .active_notifications, .horizontal_navbarcontentlogin, .searchbar_wrapper {
+  .active_directmessages, .active_notifications, .horizontal_navbarcontentlogin, .searchbar_wrapper, .createpost {
   display: none;
   }
-    .createpost {
+    .createpostmobile {
     box-shadow: 0 0.25px 3px rgb(70 71 72 / 28%), inset 0 -1px 0 rgb(0 0 0 / 15%);
     background: white;
     border: 0px;
