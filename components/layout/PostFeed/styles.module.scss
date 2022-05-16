@@ -1,6 +1,10 @@
 @import '../../../theme/variables.scss';
 
 @media screen and (min-width: 786px) {
+  
+  a {
+  text-decoration: none
+  }
 
   .long_block{
     max-height: 100%;
@@ -25,8 +29,6 @@
     margin-bottom: 30px;
     a{
       color: #333;
-      text-decoration: none;
-      cursor: pointer;
       transition: 0.5s;
     }
     h3{
