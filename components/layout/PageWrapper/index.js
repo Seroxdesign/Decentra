@@ -23,7 +23,7 @@ export default function PageWrapper(props) {
     <div className={styles.active_directmessages}/>
     <div className={styles.active_notifications}/>
   
-   <div className={styles.horizontal_navbarcontent}>
+   <div className={styles.horizontal_navbarcontentlogin}>
     <div className={styles.active_login}/>
     <a>Log In</a>
    </div>
