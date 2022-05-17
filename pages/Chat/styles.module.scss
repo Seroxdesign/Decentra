@@ -14,6 +14,8 @@
 .messageauthor {
 display: flex;
  gap: 8px;
+ margin-top: 0.5em;
+ margin-bottom: 1em;
  
  img {
   border-radius: 5px;
@@ -22,26 +24,38 @@ display: flex;
 }
 
 .sent{
-  color: #333;
+  color: rgb(255, 255, 255);
+  background-color: rgb(33, 137, 169);
+  margin-top: 1em;
+  padding: 1em;
+  max-width: 70vw;
+  border-radius: 12px;
 }
 
 .received{
-  color: #333;
+  color: rgb(255, 255, 255);
+  background-color: rgb(164, 46, 185);
+  margin-top: 0.3em;
+  padding: 1em;
+  max-width: 70vw;
+  border-radius: 12px;
+  margin-left: 20vw;
 }
 
 .form{
+  border-top: 2px solid rgb(55, 55, 55); 
+
 
   input{
-    padding: 1em;
-    background: #f2f2f2;
+    
     border: 0px;
     border-radius: 12px;
-    height: 50px;
-    margin: 20px;
+    height: 40px;
+    margin: 15px;
   }
 
   button{
-    height: 50px;
+    height: 40px;
     width: 100px;
     background-color: green;
     font-size: large;

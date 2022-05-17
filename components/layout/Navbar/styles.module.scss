@@ -127,10 +127,27 @@
   .mobile_control{
     display: none;
   }
+  
+  .close{
+  display: none;    
+  }
+
 }
 
 
 @media screen and (max-width: 786px) {
+
+  .close{
+    height: 40px;
+    margin-bottom: 1em;
+    margin-left: 5vw;
+    margin-top: 1em;
+    width: 40vw;
+    background-color: rgb(127, 29, 29);
+    color: white;
+    border-radius: 12px;
+  }
+
   .navbar{
     height: 50px;
     width: 100vw;
@@ -175,8 +192,8 @@
 
         button{
           width: 100%;
-          background-color: #5c5a58;
           color: white;
+          background-color: #42464d;
           display: flex;
           align-items: center;
           justify-content: space-around;

@@ -22,10 +22,11 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-      <ul className={styles.ul}>
+      <ul className={styles.ul} >
         {/* user is signed-in and has username */}
         {username && (
           <div className={ mobileMenu ? styles.mobile_wrap : styles.links}>
+          <button onClick={()=> {toggleMenu(false)}} className={styles.close}>Close</button>
            <ul className={styles.ul_universal}>
              {
                username ? 
@@ -150,23 +151,23 @@ export default function Navbar() {
             <img src="https://i.imgur.com/rhTxXmI.png" alt="open mobile menu"/>
           </button>
         }
+          <Link href="/">
+            <button className={styles.mobile_control}>
+              🏡
+            </button>
+          </Link>
         
-          <button className={styles.mobile_control}>
-            🏡
-          </button>
-          
-          <button className={styles.mobile_control}>
-            💬
-          </button>
-          
-          <button className={styles.mobile_control}>
-            👥
-          </button>
-          <a href={`/${username}`}>
-          <button className={styles.mobile_control}>
-            👥
-          </button>
-          </a>
+          <Link href={"/Chat"}>
+            <button className={styles.mobile_control}>
+              💬
+            </button>
+          </Link>
+  
+          <Link href={`/${username}`}>
+            <button className={styles.mobile_control}>
+              👥
+            </button>
+          </Link>
        </ul>
         {/* user is not signed OR has not created username */}
       
