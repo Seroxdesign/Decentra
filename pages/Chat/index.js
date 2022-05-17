@@ -31,8 +31,7 @@ export default function Chat() {
 
   return (
     <AuthCheck>
-      <div>
-        <LogOutButton />
+      <div class={styles.mainchat}>
 
     <main className={styles.main}>
       {messages && messages.map((msg) => <ChatMessage key={msg.id}  message={msg}/> )}
