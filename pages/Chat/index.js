@@ -57,8 +57,8 @@ function ChatMessage(props) {
   <>
     <div className={messageClass}>
     <div className={styles.messageauthor}>  
-      <h4>{displayName}</h4>
       <img src={photoURL} />
+      <h4>{displayName}</h4>
     </div>
       <p>{text}</p>
     </div>
