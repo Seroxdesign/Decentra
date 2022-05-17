@@ -1,9 +1,15 @@
+.mainchat {
+ background: white;
+ border-radius: 12px;
+}
+
 .main{
  max-height: 80vh;
  padding: 1em;
  overflow-y: scroll;
- background: white;
- border-radius: 12px;
+}
+.messageuathor {
+display: flex;
 }
 
 .sent{
@@ -24,7 +30,6 @@
     padding: 0.5em;
     margin-right: 1em;
     width: 200px;
-
   }
 
   button{
