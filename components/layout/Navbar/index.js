@@ -41,12 +41,12 @@ export default function Navbar() {
               ''
              }
            <li className={styles.li}>
-              <Link href="/messages">
+              <Link href={`/${username}`}>
                 <button className={styles.link_btn}>
                   📅
                 </button>
               </Link>
-              <a>Events</a>
+              <a>Profile</a>
             </li>
             <div className={styles.category_name}><b>Get Started</b></div>
             <li className={styles.li}>
