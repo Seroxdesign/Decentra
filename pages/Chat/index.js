@@ -40,11 +40,8 @@ export default function Chat() {
 
       <span></span>
         <form onSubmit={sendMessage} className={styles.form}>
-
           <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Write a message" />
-
           <button type="submit" disabled={!formValue}>🕊️</button>
-
         </form>
       </div>
     </AuthCheck>
@@ -65,7 +62,6 @@ function ChatMessage(props) {
       <img src={photoURL} />
     </div>
       <p>{text}</p>
-      
     </div>
   </>
   )
