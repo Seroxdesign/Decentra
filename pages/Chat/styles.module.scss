@@ -1,15 +1,19 @@
 .mainchat {
  background: white;
  border-radius: 12px;
+ width: 988px;
+ margin: auto;
+ margin-top: 25px;
 }
 
 .main{
- max-height: 80vh;
+ height: calc(100vh - 200px);
  padding: 1em;
  overflow-y: scroll;
 }
 .messageauthor {
 display: flex;
+ gap: 8px;
  
  img {
   border-radius: 5px;
@@ -18,7 +22,6 @@ display: flex;
 }
 
 .sent{
-  margin-top: 1em;
   color: #333;
 }
 
@@ -27,14 +30,14 @@ display: flex;
 }
 
 .form{
-  margin-top: 1em;
-  margin-left: 1em;
 
   input{
+    padding: 1em;
+    background: #f2f2f2;
+    border: 0px;
+    border-radius: 12px;
     height: 50px;
-    padding: 0.5em;
-    margin-right: 1em;
-    width: 200px;
+    margin: 20px;
   }
 
   button{
@@ -42,5 +45,7 @@ display: flex;
     width: 100px;
     background-color: green;
     font-size: large;
+    border: 0px;
+    border-radius: 12px;
   }
 }
