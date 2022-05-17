@@ -8,12 +8,10 @@ export default function PageWrapper(props) {
     <div className={styles.container}>
   
 <div className={styles.horizontal_navbar}>
-  <a href="/">  
   <div className={styles.horizontal_navbarcontent}>
    <div className={styles.active_communitylogo}></div>
     <a className={styles.active_communityname}>Decentra</a>
    </div>
-  </a>
    <div className={styles.searchbar_wrapper}>
     <button className={styles.searchbar}>Search</button>
    </div>
