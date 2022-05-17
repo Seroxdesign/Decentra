@@ -1,40 +1,43 @@
+.mainchat {
+ background: white;
+ border-radius: 12px;
+ width: 988px;
+ margin: auto;
+ margin-top: 25px;
+}
+
 .main{
-  min-height: 400px;
-  max-height: 80vh;
-  width: 400px;
-  padding: 1em;
-  overflow-y: scroll;
-  border: 1px solid white; 
+ height: calc(100vh - 200px);
+ padding: 1em;
+ overflow-y: scroll;
+}
+.messageauthor {
+display: flex;
+ gap: 8px;
+ 
+ img {
+  border-radius: 5px;
+  width: 21px;
+ }
 }
 
 .sent{
-  width: 200px;
-  height: 100px;
-  margin-top: 1em;
-  background-color: rgb(145, 145, 209);
-  color: white;
-  max-height: 200px;
-  overflow-y: scroll;
+  color: #333;
 }
 
 .received{
-  margin-left: 150px;
-  height: 100px;
-  width: 200px;
-  color: white;
-  background-color: rgb(55, 55, 225);
+  color: #333;
 }
 
 .form{
-  margin-top: 1em;
-  margin-left: 1em;
 
   input{
+    padding: 1em;
+    background: #f2f2f2;
+    border: 0px;
+    border-radius: 12px;
     height: 50px;
-    padding: 0.5em;
-    margin-right: 1em;
-    width: 200px;
-
+    margin: 20px;
   }
 
   button{
@@ -42,5 +45,7 @@
     width: 100px;
     background-color: green;
     font-size: large;
+    border: 0px;
+    border-radius: 12px;
   }
 }

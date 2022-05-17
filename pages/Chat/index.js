@@ -31,8 +31,7 @@ export default function Chat() {
 
   return (
     <AuthCheck>
-      <div>
-        <LogOutButton />
+      <div class={styles.mainchat}>
 
     <main className={styles.main}>
       {messages && messages.map((msg) => <ChatMessage key={msg.id}  message={msg}/> )}
@@ -40,7 +39,7 @@ export default function Chat() {
 
       <span></span>
         <form onSubmit={sendMessage} className={styles.form}>
-          <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="say something nice" />
+          <input value={formValue} onChange={(e) => setFormValue(e.target.value)} placeholder="Write a message" />
           <button type="submit" disabled={!formValue}>🕊️</button>
         </form>
       </div>
@@ -57,9 +56,10 @@ function ChatMessage(props) {
   return (
   <>
     <div className={messageClass}>
-      <h4>{displayName}</h4>
+    <div className={styles.messageauthor}>  
       <img src={photoURL} />
-      <h6>Message:</h6>
+      <h4>{displayName}</h4>
+    </div>
       <p>{text}</p>
     </div>
   </>
