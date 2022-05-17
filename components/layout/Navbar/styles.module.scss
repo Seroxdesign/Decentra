@@ -17,6 +17,10 @@
     display: flex;
     flex-direction: column;
     width: 200px;
+    a {
+    text-decoration: none;
+    }
+    
   }
   
   .pushRight{
@@ -29,7 +33,7 @@
     display: flex;
     width: 220px;
     margin-top: 20px;
-    padding-left: 22px;
+    padding-left: 20px;
   }
   .ul_universal {
     display:flex;
@@ -48,7 +52,7 @@
     flex-direction:column;
   }
   .category_name {
-  padding-left: 10px;
+  padding-left: 12px;
     margin-top: 20px;
     margin-bottom: 7.5px;
     color: #333;
@@ -59,7 +63,7 @@
     margin: 0.5px 0;
     display: flex;
     align-items: center;
-    padding: 7px 0 7px 10px;
+    padding: 7px 0 7px 12px;
     color: #42464d;
   }
   .li:hover {
