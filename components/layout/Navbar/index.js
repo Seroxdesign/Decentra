@@ -31,23 +31,24 @@ export default function Navbar() {
                username ? 
               <a href="/">
                <li className={styles.li}>
-                  <button className={styles.link_btn}>
+                  <div className={styles.link_btn}>
                   🏡
-                </button>
+                </div>
                 <a>Home</a>
               </li>
              </a> 
               :
               ''
              }
+          <a href={`/${username}`}>
            <li className={styles.li}>
-              <Link href={`/${username}`}>
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                   📅
-                </button>
+                </div>
               </Link>
               <a>Profile</a>
             </li>
+           </a> 
             <div className={styles.category_name}><b>Get Started</b></div>
             <li className={styles.li}>
               <Link href="/our-mission">
