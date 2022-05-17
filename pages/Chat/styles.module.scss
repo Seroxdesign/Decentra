@@ -1,28 +1,18 @@
 .main{
-  min-height: 400px;
-  max-height: 80vh;
-  width: 400px;
-  padding: 1em;
-  overflow-y: scroll;
-  border: 1px solid white; 
+ max-height: 80vh;
+ padding: 1em;
+ overflow-y: scroll;
+ background: white;
+ border-radius: 12px;
 }
 
 .sent{
-  width: 200px;
-  height: 100px;
   margin-top: 1em;
-  background-color: rgb(145, 145, 209);
-  color: white;
-  max-height: 200px;
-  overflow-y: scroll;
+  color: #333;
 }
 
 .received{
-  margin-left: 150px;
-  height: 100px;
-  width: 200px;
-  color: white;
-  background-color: rgb(55, 55, 225);
+  color: #333;
 }
 
 .form{
