@@ -40,7 +40,7 @@ export default function Navbar() {
               :
               ''
              }
-          <a href={`/${username}`}>
+          <a href="{`/${username}`}">
            <li className={styles.li}>
                 <div className={styles.link_btn}>
                   📅
