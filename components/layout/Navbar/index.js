@@ -43,28 +43,29 @@ export default function Navbar() {
              }
           <a href={`/${username}`}>
            <li className={styles.li}>
-                <div className={styles.link_btn}>
-                  📅
-                </div>
+              <div className={styles.link_btn}>
+                📅
+              </div>
               <a>Profile</a>
             </li>
            </a> 
             <div className={styles.category_name}><b>Get Started</b></div>
             <li className={styles.li}>
-              <Link href="/our-mission">
+              <Link href="/Chat">
                 <div className={styles.link_btn}>
                    📜
                 </div>
+           
               </Link>
-             <a>Our mission</a>
+              <a>Chat</a>
             </li>
             <li className={styles.li}>
-              <Link href="/settings">
+              <Link href="/Web3">
                 <div className={styles.link_btn}>
-                   🙋
+                  💸
                 </div>
               </Link>
-              <a>FAQ</a>
+              <a>Wallet</a>
             </li>
             <li className={styles.li}>
               <Link href="/announcements">
