@@ -41,7 +41,7 @@ export default function index({posts, links}) {
       </div>
       <CommunityBar/>
     </main>
-  <div className={styles.rightsidebar}</div>
+  <div className={styles.rightsidebar}></div>
   )
 }
 
