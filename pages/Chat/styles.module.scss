@@ -29,7 +29,6 @@ display: flex;
   background-color: #f2f2f2;
   margin-top: 0.3em;
   padding: 1em;
-  max-width: 70vw;
   border-radius: 12px;
 }
 
@@ -62,3 +61,15 @@ display: flex;
     border-radius: 12px;
   }
 }
+
+@media screen and (max-width: 786px) {
+ .mainchat {
+ border-radius: 0px;
+    width: auto;
+    margin: auto;
+ }
+ .main {
+ height: calc(100vh - 181px);
+ }
+}
+ 
