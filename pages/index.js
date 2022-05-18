@@ -29,6 +29,7 @@ export async function getServerSideProps(context){
 export default function index({posts, links}) {
 
   return (
+   <div className={styles.outermain}> 
     <main className={styles.main}>
       <div className={styles.left_main}>
         <AuthCheck>
@@ -42,6 +43,7 @@ export default function index({posts, links}) {
       <CommunityBar/>
     </main>
   <div className={styles.rightsidebar}></div>
+ </div>
   )
 }
 
