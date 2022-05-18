@@ -1,13 +1,13 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-export default function FeedTab({ setTab, links, posts, images, events}) {
+export default function FeedTab({ setTab, posts, links, images, events}) {
 
-  const tabs = [links, posts, images, events]
+  const tabs = [posts, links, images, events]
   console.log(tabs)
   return (
     <div className={styles.container}>
-      <ul>
+      <ul className={styles.profiletabs}>
         {
           tabs.map((tab, i) => {
             {console.log(tab)}
