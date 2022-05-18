@@ -3,11 +3,11 @@ import styles from './styles.module.scss'
 
 export default function FeedTab({ setTab, links, posts, images, events}) {
 
-  const tabs = [links, posts, images, events]
+  const tabs = [Posts, Links, Images, Events]
   console.log(tabs)
   return (
     <div className={styles.container}>
-      <ul>
+      <ul className={styles.profiletabs}>
         {
           tabs.map((tab, i) => {
             {console.log(tab)}
