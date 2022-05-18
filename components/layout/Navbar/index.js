@@ -32,53 +32,53 @@ export default function Navbar() {
                username ? 
               <a href="/">
                <li className={styles.li}>
-                  <button className={styles.link_btn}>
+                  <div className={styles.link_btn}>
                   🏡
-                </button>
+                </div>
                 <a>Home</a>
               </li>
              </a> 
               :
               ''
              }
+          <a href={`/${username}`}>
            <li className={styles.li}>
-              <Link href={`/${username}`}>
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                   📅
-                </button>
-              </Link>
+                </div>
               <a>Profile</a>
             </li>
+           </a> 
             <div className={styles.category_name}><b>Get Started</b></div>
             <li className={styles.li}>
               <Link href="/our-mission">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    📜
-                </button>
+                </div>
               </Link>
              <a>Our mission</a>
             </li>
             <li className={styles.li}>
               <Link href="/settings">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    🙋
-                </button>
+                </div>
               </Link>
               <a>FAQ</a>
             </li>
             <li className={styles.li}>
               <Link href="/announcements">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    📢
-                </button>
+                </div>
               </Link>
               <a>Announcements</a>
             </li>
             <li className={styles.li}>
               <Link href="/our-team">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    👥
-                </button>
+                </div>
               </Link>
               <a>Our team</a>
             </li>
@@ -87,17 +87,17 @@ export default function Navbar() {
            <ul className={styles.ul_community_specific}>
              <li className={styles.li}>
               <Link href="/blog">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    📰
-                </button>
+                </div>
               </Link>
               <a>Blog</a>
             </li>
             <li className={styles.li}>
               <Link href="/guides">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                    📚
-                </button>
+                </div>
               </Link>
               <a>Guides</a>
             </li>
@@ -106,9 +106,9 @@ export default function Navbar() {
            <ul className={styles.ul_decentra_community}> 
            <li className={styles.li}>
               <Link href="/decentra">
-                <button className={styles.link_btn}>
+                <div className={styles.link_btn}>
                   <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg" alt="decentra" />
-                </button>
+                </div>
               </Link>
               <a>Decentra</a>
             </li>
@@ -119,19 +119,9 @@ export default function Navbar() {
            <ul className={styles.ul_actions}> 
 
             <li className={styles.li}>
-              <Link href="/Communities">
-                <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/HTTMKfN/add.png" alt="createcommunity" />
-                </button>
-              </Link>
               <a>Create community</a>
             </li>
             <li className={styles.li}>
-              <Link href="/404">
-                <button className={styles.link_btn}>
-                  <img src="https://i.ibb.co/NFbsNZj/123123-Untitled.png" alt="discover" />
-                </button>
-              </Link>
               <a>Discover</a>
             </li>
            </ul> 
