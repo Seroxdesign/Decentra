@@ -16,6 +16,7 @@ display: flex;
  gap: 8px;
  margin-top: 0.5em;
  margin-bottom: 1em;
+ color: #333;
  
  img {
   border-radius: 5px;
@@ -24,26 +25,23 @@ display: flex;
 }
 
 .sent{
-  color: rgb(255, 255, 255);
-  background-color: rgb(33, 137, 169);
-  margin-top: 1em;
+  color: #42464d;
+  background-color: #f2f2f2;
+  margin-top: 0.3em;
   padding: 1em;
-  max-width: 70vw;
   border-radius: 12px;
 }
 
 .received{
-  color: rgb(255, 255, 255);
-  background-color: rgb(164, 46, 185);
-  margin-top: 0.3em;
+  color: #42464d;
+  border: 1px solid #eee;
   padding: 1em;
-  max-width: 70vw;
   border-radius: 12px;
-  margin-left: 20vw;
+  margin-top: 0.3em;
 }
 
 .form{
-  border-top: 2px solid rgb(55, 55, 55); 
+  border-top: 1px solid #eee; 
 
 
   input{
@@ -63,3 +61,15 @@ display: flex;
     border-radius: 12px;
   }
 }
+
+@media screen and (max-width: 786px) {
+ .mainchat {
+ border-radius: 0px;
+    width: auto;
+    margin: auto;
+ }
+ .main {
+ height: calc(100vh - 181px);
+ }
+}
+ 
