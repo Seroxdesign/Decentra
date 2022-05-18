@@ -110,7 +110,7 @@
     flex-direction: column; 
     min-height: 100%;
     color: #333;
-    background-color:  white;;
+    background-color: white;
 
     .banner{
       width: 100%;
@@ -134,7 +134,7 @@
 
     main{
      
-      padding: 1em;
+      padding: 20px;
       padding-top: 0;
     }
 
@@ -153,13 +153,12 @@
     min-height: 60px;
     display: flex;
     align-items: center;
-    padding-left: 1em;
+    padding-left: 20px;
     padding-bottom: 2em;
   
     button{
       height: 40px;
       width: auto;
-      margin-right: 1em;
       padding: 0 12px;
       background-color: #272522;
       border: 2px solid white;
@@ -180,17 +179,16 @@
       max-height: 50vw;
       width: 15vh;
       height: 15vh;
-      margin-left: 1em;
+      margin-left: 20px;
       margin-top: -8vh;
-      border: 5px solid #2E2B29;
+      border: 5px solid white;
       border-radius: 12px;
-      background-color: rgb(158, 158, 158);
+      background-color: white;
     }
   }
 
   .bio{
-    margin-left: 1em;
-    width: 90%;
+    margin-left: 20px;
     margin-bottom: 1.5em;
   }
   
