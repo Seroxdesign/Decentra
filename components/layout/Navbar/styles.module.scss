@@ -3,7 +3,7 @@
 @media screen and (min-width: 786px) {
   .navbar{
     height: 100vh;
-    width: 220px;
+    width: 240px;
     color: var(--colors-text);
     position: fixed;
     top: 60px;
@@ -11,6 +11,7 @@
     z-index: 99;
     display: flex;
     align-items: flex-start;
+    border-right: 1px solid #eee;
   }
   
   .links{
@@ -33,7 +34,7 @@
     display: flex;
     width: 220px;
     margin-top: 20px;
-    padding-left: 20px;
+    padding: 0 20px;
   }
   .ul_universal {
     display:flex;
