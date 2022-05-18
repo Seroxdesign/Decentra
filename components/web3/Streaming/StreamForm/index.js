@@ -76,7 +76,7 @@ export const StreamForm = ({
   return (
     <div className={styles.stream_form}>
       <div className={styles.input_container}>
-        <label htmlFor="recipient" className={styles.input_label}>Wallet Address here</label>
+        <label htmlFor="recipient" className={styles.input_label}>Recipient Wallet</label>
         <input
           className={styles.input_field}
           type="text"
@@ -93,7 +93,7 @@ export const StreamForm = ({
 
       <div>
         <label className={styles.input_label} htmlFor="payment">
-          Payment monthly
+          Payment amount (per month)
         </label>
         <input
           id="payment"

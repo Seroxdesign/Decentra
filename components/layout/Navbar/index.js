@@ -162,6 +162,14 @@ export default function Navbar() {
               💬
             </button>
           </Link>
+
+           
+          <Link href={"/Web3"}>
+            <button className={styles.mobile_control}>
+              💸
+            </button>
+          </Link>
+  
   
           <Link href={`/${username}`}>
             <button className={styles.mobile_control}>

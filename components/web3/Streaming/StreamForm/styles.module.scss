@@ -1,0 +1,26 @@
+.stream_form{
+  background-color: white;
+  padding: 1em;
+  border-radius: 12px;
+
+  label{
+    font-size: larger;
+  }
+  
+  input{
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+    height: 30px;
+    width: 80vw;
+  }
+}
+
+.input_field_submit{
+  margin-top: 1em;
+  width: 50vw;
+  height: 40px;
+  background-color: rgb(21, 125, 21);
+  color: white;
+  border: none;
+  border-radius: 12px;
+}

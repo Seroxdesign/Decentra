@@ -1,7 +1,43 @@
 .connector{
-  max-width:50vw;
-  min-width: 59vw;
+  height: 82vh;
+  width: 100%;
+  color: #303030;
+  padding: 1em;
 
+  overflow-y: scroll;
+
+  h3{
+    color: rgb(15, 138, 15);
+  }
+}
+
+.container{
+  h5{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.info{
   margin-bottom: 1em;
-  
+  margin-top: 1em;
+}
+
+.btn_tab{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1em;
+
+  button{
+    width: 45vw;
+    background-color: #303030;
+    border: none;
+    padding: 1em;
+    color: white;
+  }
+
+  .highlight{
+    background-color: #5d5959;
+    border-bottom: 3px solid rgb(87, 184, 87);
+  }
 }
