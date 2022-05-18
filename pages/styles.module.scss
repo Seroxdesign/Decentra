@@ -4,12 +4,18 @@
     height: 10vh;
     border-radius: 50px;
   }
+  .rightsidebar {
+    width: 400px;
+    right: 17px;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    border-left: 1px solid #eee;
+  }
   
   .main{
     height: 100%;
-    display: grid;
-    grid-template-columns: 660px 300px;
-    width: 988px;
+    width: 660px;
     margin: auto;
     grid-gap: 28px;
   }
