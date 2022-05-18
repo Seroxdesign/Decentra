@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './styles.module.scss'
 
-export default function FeedTab({ setTab, links, posts, images, events}) {
+export default function FeedTab({ setTab, Posts, Links, Images,Events}) {
 
   const tabs = [Posts, Links, Images, Events]
   console.log(tabs)
