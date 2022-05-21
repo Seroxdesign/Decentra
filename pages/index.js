@@ -57,6 +57,39 @@ export default function index({posts, links}) {
 </div>
 <a>↓</a>
     </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <h1>2</h1>
+      <a>No Spamming, Shilling, or Scamming</a>
+</div>
+<a>↓</a>
+    </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <h1>3</h1>
+      <a>No Manipulation</a>
+</div>
+<a>↓</a>
+    </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <h1>4</h1>
+      <a>See Something, Say Something</a>
+</div>
+<a>↓</a>
+    </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <h1>5</h1>
+      <a>Beware of Scams</a>
+</div>
+<a>↓</a>
+    </div>
+
 </div>
   </div>
   </div>
