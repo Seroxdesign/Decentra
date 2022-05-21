@@ -21,14 +21,14 @@ export default function Navbar() {
   }
 
   return (
-    <div className={styles.communityexplorer}>
+    <nav className={styles.navbar}>
+   <div className={styles.communityexplorer}>
     <a>💬</a>
     <a>💸</a>
     <a>✨</a>
     <a>✨</a>
     <a>👥</a>
     </div>
-    <nav className={styles.navbar}>
       <div className={styles.communityname}>
         Decentra
       </div>
