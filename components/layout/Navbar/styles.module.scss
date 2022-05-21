@@ -14,6 +14,16 @@
     border-bottom: 1px solid #a3a3ac1a;
     box-shadow: 0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d;
   }
+  .communityexplorer {
+  position: absolute;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+}
+  }
   
   .links{
     display: flex;
