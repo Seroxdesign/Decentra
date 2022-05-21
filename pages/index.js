@@ -49,7 +49,7 @@ export default function index({posts, links}) {
   </div>
   <div className={styles.about_card}>
     <h3>Rules</h3>
-<div className={communityrules}>
+<div className={styles.communityrules}>
     <div className={styles.communityrule}>
       <div>
       <h1>1</h1>
