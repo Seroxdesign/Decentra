@@ -42,7 +42,11 @@ export default function index({posts, links}) {
       </div>
       <CommunityBar/>
     </main>
-  <div className={styles.rightsidebar}></div>
+  <div className={styles.rightsidebar}>
+  <div className={styles.about_card}>
+    <h3>About</h3>
+    <p>Forum for talking to the developers. All messages in this channel must be addressed to the devs. Or not.</p>
+  </div>
  </div>
   )
 }
