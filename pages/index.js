@@ -43,17 +43,19 @@ export default function index({posts, links}) {
       <CommunityBar/>
     </main>
   <div className={styles.rightsidebar}>
+    
   <div className={styles.about_card}>
     <h3>About</h3>
     <p>Forum for talking to the developers. All messages in this channel must be addressed to the devs. Or not.</p>
   </div>
+
   <div className={styles.about_card}>
     <h3>Rules</h3>
 <div className={styles.communityrules}>
     <div className={styles.communityrule}>
       <div className={styles.ruletext}>
       <h1>1</h1>
-      <a>Be Excellent to Each Other</a>
+      <b>Be Excellent to Each Other</b>
 </div>
 <a>↓</a>
     </div>
@@ -61,7 +63,7 @@ export default function index({posts, links}) {
 <div className={styles.communityrule}>
       <div className={styles.ruletext}>
       <h1>2</h1>
-      <a>No Spamming, Shilling, or Scamming</a>
+      <b>No Spamming, Shilling, or Scamming</b>
 </div>
 <a>↓</a>
     </div>
@@ -69,7 +71,7 @@ export default function index({posts, links}) {
 <div className={styles.communityrule}>
       <div className={styles.ruletext}>
       <h1>3</h1>
-      <a>No Manipulation</a>
+      <b>No Manipulation</b>
 </div>
 <a>↓</a>
     </div>
@@ -77,7 +79,7 @@ export default function index({posts, links}) {
 <div className={styles.communityrule}>
       <div className={styles.ruletext}>
       <h1>4</h1>
-      <a>See Something, Say Something</a>
+      <b>See Something, Say Something</b>
 </div>
 <a>↓</a>
     </div>
@@ -85,13 +87,41 @@ export default function index({posts, links}) {
 <div className={styles.communityrule}>
       <div className={styles.ruletext}>
       <h1>5</h1>
-      <a>Beware of Scams</a>
+      <b>Beware of Scams</b>
 </div>
 <a>↓</a>
     </div>
 
 </div>
   </div>
+
+<div className={styles.about_card}>
+    <h3>FAQ</h3>
+<div className={styles.communityrules}>
+    <div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <b>My ENS domain isn't showing up as an username option</b>
+</div>
+<a>↓</a>
+    </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <b>How do I Create a Communty?</b>
+</div>
+<a>↓</a>
+    </div>
+
+<div className={styles.communityrule}>
+      <div className={styles.ruletext}>
+      <b>Where and how is the data stored?</b>
+</div>
+<a>↓</a>
+    </div>
+
+</div>
+  </div>
+
   </div>
  </div>
   )
