@@ -27,7 +27,7 @@ export default function Navbar() {
     <a>💸</a>
     <a>✨</a>
     <a>✨</a>
-    <a>👥</a>
+    <a href={`/${username}`}>👥</a>
     </div>
    <div className={styles.communityleftbar}>
       <div className={styles.communityname}>
@@ -119,20 +119,7 @@ export default function Navbar() {
               <a>Guides</a>
             </li>
            </ul>
-            <div className={styles.seperator}/>
-           <ul className={styles.ul_decentra_community}> 
-           <li className={styles.li}>
-              <Link href="/decentra">
-                <div className={styles.link_btn}>
-                  <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg" alt="decentra" />
-                </div>
-              </Link>
-              <a>Decentra</a>
-            </li>
-           </ul>
-           <ul className={styles.ul_joined_communities}> 
-           </ul>
-                       <div className={styles.seperator}/>
+           <div className={styles.seperator}/>
            <ul className={styles.ul_actions}> 
 
             <li className={styles.li}>
