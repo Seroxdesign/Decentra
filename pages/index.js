@@ -31,6 +31,7 @@ export default function index({posts, links}) {
   return (
    <div className={styles.outermain}> 
     <main className={styles.main}>
+     <div className={styles.mainwrapper}> 
       <div className={styles.left_main}>
         <AuthCheck>
 
@@ -41,6 +42,7 @@ export default function index({posts, links}) {
         </AuthCheck>
       </div>
       <CommunityBar/>
+     </div>     
     </main>
   <div className={styles.rightsidebar}>
     
