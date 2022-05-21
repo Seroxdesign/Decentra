@@ -36,7 +36,7 @@ export default function Navbar() {
      <div className={styles.communityinfo}>
         <a>The all-in-one community platform</a>
         <div className={styles.communityjoin}>
-          <a>Join community</a>
+          <b>Join community</b>
         </div>
       </div>
       <ul className={styles.ul} >
