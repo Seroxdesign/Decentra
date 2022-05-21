@@ -19,6 +19,22 @@
       h3{
       margin-bottom: 15px;
       }
+      h1 {
+      font-size: 28px;
+        min-width: 18px;
+      }
+      .communityrules {
+          display: flex;
+    flex-direction: column;
+    gap: 10px;
+      }
+      .communityrule {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    justify-content: space-between;
+    align-items: center;
+      }
     }
     
   }
