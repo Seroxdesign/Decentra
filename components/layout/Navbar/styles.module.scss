@@ -50,7 +50,7 @@
   .links{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     a {
     text-decoration: none;
     }
@@ -65,9 +65,7 @@
   
   .ul{
     display: flex;
-    width: 220px;
-    margin-top: 20px;
-    padding: 0 20px;
+    padding: 20px 8px 0px 8px;
   }
   .ul_universal {
     display:flex;
@@ -89,7 +87,6 @@
   padding-left: 12px;
     margin-top: 20px;
     margin-bottom: 7.5px;
-    color: #333;
   }
   
   .li{
@@ -101,7 +98,7 @@
     color: #b8bcbe;
   }
   .li:hover {
-  background: white;
+  background: #3d4046;
     border-radius: 7.5px;
   }
   
