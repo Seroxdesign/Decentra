@@ -22,6 +22,15 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
+      <div className={styles.communityname}>
+        Decentra
+      </div>
+     <div className={styles.communityinfo}>
+        <a>The all-in-one community platform</a>
+        <div>
+          <a>Join community</a>
+        </div>
+      </div>
       <ul className={styles.ul} >
         {/* user is signed-in and has username */}
         {username && (
