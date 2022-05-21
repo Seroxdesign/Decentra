@@ -46,10 +46,13 @@
   }
   
   .main{
-    height: 100%;
-    width: 660px;
+       overflow-y: scroll;
+    width: 100%;
+    height: calc(100vh - 60px);
+  }
+  .mainwrapper {
+  width: 660px;
     margin: auto;
-    grid-gap: 28px;
   }
   .left_main {
   padding-top: 25px;
