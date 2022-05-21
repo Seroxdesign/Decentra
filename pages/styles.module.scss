@@ -23,6 +23,12 @@
       font-size: 28px;
         min-width: 18px;
       }
+      .ruletext{
+      display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+      }
       .communityrules {
           display: flex;
     flex-direction: column;
