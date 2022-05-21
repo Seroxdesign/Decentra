@@ -27,7 +27,6 @@ export default function Navbar() {
     <a>✨</a>
     <a>✨</a>
     <a>👥</a>
-    <img src="https://cdn.discordapp.com/icons/956638782973685841/df7b4cc027d9f981a68bd38f5b13299c.webp?size=160"></img>
     </div>
     <nav className={styles.navbar}>
       <div className={styles.communityname}>
