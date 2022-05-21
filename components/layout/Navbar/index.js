@@ -29,6 +29,7 @@ export default function Navbar() {
     <a>✨</a>
     <a>👥</a>
     </div>
+   <div className={styles.communityleftbar}>
       <div className={styles.communityname}>
         Decentra
       </div>
@@ -186,6 +187,7 @@ export default function Navbar() {
         {/* user is not signed OR has not created username */}
       
       </ul>
+   </div>   
     </nav>
   );
 }
