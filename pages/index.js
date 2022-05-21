@@ -47,6 +47,7 @@ export default function index({posts, links}) {
     <h3>About</h3>
     <p>Forum for talking to the developers. All messages in this channel must be addressed to the devs. Or not.</p>
   </div>
+  </div>
  </div>
   )
 }
