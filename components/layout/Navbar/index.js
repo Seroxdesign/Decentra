@@ -31,7 +31,7 @@ export default function Navbar() {
     </div>
    <div className={styles.communityleftbar}>
       <div className={styles.communityname}>
-        Decentra
+        <h3>Decentra</h3>
       </div>
      <div className={styles.communityinfo}>
         <a>The all-in-one community platform</a>
