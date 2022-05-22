@@ -119,17 +119,7 @@ export default function Navbar() {
               <a>Guides</a>
             </li>
            </ul>
-           <div className={styles.seperator}/>
-           <ul className={styles.ul_actions}> 
-
-            <li className={styles.li}>
-              <a>Create community</a>
-            </li>
-            <li className={styles.li}>
-              <a>Discover</a>
-            </li>
-           </ul> 
-            <li className={styles.li}>
+                       <li className={styles.li}>
               <button onClick={signOutNow} className={styles.logout}>Log Out</button>
             </li>
           </div>
