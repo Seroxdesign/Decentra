@@ -1,5 +1,5 @@
 .main{
- height: calc(100vh - 120px);
+ height: calc(100vh - 125px);
  padding: 0 20px;
  overflow-y: scroll;
 }
@@ -37,8 +37,9 @@ border-radius: 7.5px;
     
    border: 0;
     border-radius: 12px;
-    height: 40px;
+    height: 45px;
     width: 100%;
+    font-size: 16px;
     background: #40444b;
     padding: 10px;
  }
