@@ -46,7 +46,7 @@
   .link_block{
     height: 154px;
     width: 100%;
-    background-color: white;
+    background-color: #3d4046;
     padding: 1em;
     display: flex;
     align-items: center;
@@ -54,13 +54,11 @@
     flex-direction: column;
     text-decoration: none;
     border-radius: 7.5px;
-    box-shadow: 0 5px 4px 0 #e4e1db;
-    color: #b4b3b2;
+    color: #b8bcbe;
   
     h2{
       font-size: inherit;
       margin-bottom: 0em;
-      color: #42464d;
       font-weight: normal;  
     }
   
