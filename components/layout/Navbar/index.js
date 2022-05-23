@@ -33,6 +33,13 @@ export default function Navbar() {
       <div className={styles.communityname}>
         <h3>Decentra</h3>
       </div>
+      <div className={styles.userspace}>
+        <img src={user?.photoURL}></img>
+        <div>
+        <b>${displayName}</b>
+        <p>${username}</p>
+        </div>
+      </div>
      <div className={styles.communityinfo}>
         <a>The all-in-one community platform</a>
         <div className={styles.communityjoin}>
