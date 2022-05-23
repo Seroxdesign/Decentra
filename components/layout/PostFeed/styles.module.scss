@@ -14,7 +14,7 @@
   }
     
     h2{
-      color: #333;
+      color: #b8bcbe;
       font-size: 20px;
       margin-bottom: 25px;
     }
@@ -23,12 +23,11 @@
   .card{
     padding: 20px 0 15px 0;
     width: 100%;
-    background-color: white;
+    background-color: #3d4046;
     border-radius: 12px;
-    box-shadow: 0 5px 4px 0 #e4e1db;
     margin-bottom: 30px;
     a{
-      color: #333;
+      color: #b8bcbe;
       transition: 0.5s;
     }
     p {
@@ -38,7 +37,7 @@
       font-size: 22px;
     }
     strong{
-      color: #42464d; 
+      color: #959595; 
     }
 
     img{
@@ -54,7 +53,7 @@
   
   .post_details {
       margin-bottom: 0.75em;
-      color: #42464d;
+      color: #959595;
     img {
     width: 21px;
     min-width: 0px;
@@ -75,14 +74,14 @@
   }
 
   .preview{
-    color: #42464d;
+    color: #b8bcbe;
     margin-top: 0.75em;
     line-height: 1.3em;
   }
   .action {
     margin-top: 15px;
     padding: 0 20px;
-    color: #42464d;
+    color: #b8bcbe;
   }
 }
 

@@ -3,20 +3,78 @@
 @media screen and (min-width: 786px) {
   .navbar{
     height: 100vh;
-    width: 220px;
+    width: 320px;
     color: var(--colors-text);
     position: fixed;
-    top: 60px;
-    border-bottom: 1px solid var(--color-gray);
     z-index: 99;
+    background: #2f3136;
+  }
+  .communityname {
+    height: 60px;
+    border-bottom: 1px solid #a3a3ac1a;
+    box-shadow: 0 1px 0 #04040533, 0 1.5px 0 #0606070d, 0 2px 0 #0404050d;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    padding: 0 20px;
+    hr {
+    font-size: 20px;
+    }
+  }
+  .userspace {
+  position: fixed;
+    bottom: 0;
+    height: 60px;
+    border-top: 1px solid #a3a3ac1a;
+    width: 260px;
+    padding: 0 20px;
+    display: flex;
+    box-shadow: 0 -1px 0 #04040533, 0 -1.5px 0 #0606070d, 0 -2px 0 #0404050d;
+    align-items: center;
+    gap: 12px;
+    
+    img {
+    max-width: 37.5px;
+    border-radius: 12px;
+    }
+    p{
+    color: #959595;
+      font-size: 15px;
+    }
+  }
+  .communityinfo {
+  padding: 20px;
+    border-bottom: 1px solid rgba(163,163,172,0.1);
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .communityjoin {
+      background: #3d4046;
+    padding: 10px 15px;
+    border-radius: 12px;
+    width: max-content;
+  }
+  .communityexplorer {
+  position: absolute;
+    width: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    background: #202225;
+    gap: 12px;
+    padding: 12px 0px;
+  }
+  .communityleftbar {
+  margin-left: 60px;
+    color: #b8bcbe;
   }
   
   .links{
     display: flex;
     flex-direction: column;
-    width: 200px;
+    width: 100%;
     a {
     text-decoration: none;
     }
@@ -31,9 +89,7 @@
   
   .ul{
     display: flex;
-    width: 220px;
-    margin-top: 20px;
-    padding-left: 20px;
+    padding: 20px 8px 0px 8px;
   }
   .ul_universal {
     display:flex;
@@ -43,10 +99,6 @@
     display:flex;
     flex-direction:column;
   }
-  .ul_decentra_community {
-    display:flex;
-    flex-direction:column;
-  }  
   .ul_actions  {
     display:flex;
     flex-direction:column;
@@ -55,7 +107,6 @@
   padding-left: 12px;
     margin-top: 20px;
     margin-bottom: 7.5px;
-    color: #333;
   }
   
   .li{
@@ -64,10 +115,10 @@
     display: flex;
     align-items: center;
     padding: 7px 0 7px 12px;
-    color: #42464d;
+    color: #b8bcbe;
   }
   .li:hover {
-  background: white;
+  background: #3d4046;
     border-radius: 7.5px;
   }
   
@@ -86,46 +137,8 @@
     }
   }
   
-  .logout{
-    position: fixed;
-    bottom: 1em;
-    height: 35px;
-    border-radius: 7.5px;
-    width: 75px;
-    background-color: #3d3b39;
-    border: 0;
-    color: white;
-    cursor: pointer;
-    
-    &:hover{
-      background-color: #272522;
-      border: 1px solid white;
-    }
-  }
-  
   .seperator{
     height: 25px;
-  }
-  
-  .li_last{
-    list-style: none;
-    height: 35px;
-    width: 35px;
-    margin: 8px 0;
-    border-radius: 7.5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.5s;
-  
-    &:hover{
-      background-color: rgb(206, 206, 236);
-    }
-    img {
-    max-width: 35px;
-    border-radius: 7.5px;
-    }
   }
 
   .mobile_control{
@@ -151,7 +164,15 @@
     color: white;
     border-radius: 12px;
   }
+   
+  .communityname, .userspace, .communityinfo, .communityexplorer {
+  display: none;
+  }
 
+  .communityleftbar {
+  width: 100%;
+  }
+  
   .navbar{
     height: 50px;
     width: 100vw;
