@@ -28,6 +28,16 @@ export default function Navbar() {
     <a>✨</a>
     <a>✨</a>
     <a href={`/${username}`}>👥</a>
+    {
+          mobileMenu ? 
+          <button className={styles.mobile_control} onClick={() => {toggleMenu(false)}}>
+            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+          </button>
+          :
+          <button className={styles.mobile_control} onClick={() => {toggleMenu(true)}}>
+            <img src="https://i.imgur.com/rhTxXmI.png" alt="open mobile menu"/>
+          </button>
+        }
     </div>
    <div className={styles.communityleftbar}>
       <div className={styles.communityname}>
