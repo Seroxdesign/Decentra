@@ -20,7 +20,7 @@
         min-height: 20vh;
         min-width: 988px;
         border-radius: 12px 12px 0px 0px;
-        height: 329.33px;
+        height: 379.33px;
       }
     }
 
@@ -36,6 +36,7 @@
       top: -10vh;
       left: 5%;
       border: 5px solid #303030;
+      background-color: white;
     }
 
   }
@@ -67,8 +68,10 @@
   .pfp{
     margin-top: -100px;
     padding-left: 20px;
+ 
     img{
       border-radius: 12px;
+      background-color: white;
     }
   }
 

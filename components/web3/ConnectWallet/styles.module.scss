@@ -41,3 +41,17 @@
     border-bottom: 3px solid rgb(87, 184, 87);
   }
 }
+
+
+@media screen and (min-width: 786px) {
+  .connector{
+    height: 100%;
+    width: 100%;
+    color: #303030;
+    padding: 1em;
+  
+    h3{
+      color: rgb(15, 138, 15);
+    }
+  }
+}
