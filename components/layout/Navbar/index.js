@@ -36,8 +36,8 @@ export default function Navbar() {
       <div className={styles.userspace}>
         <img></img>
         <div>
-        <b>Daniel</b>
-        <p>${username}</p>
+        <b>{displayName}</b>
+        <p>{username}</p>
         </div>
       </div>
      <div className={styles.communityinfo}>
