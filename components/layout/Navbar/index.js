@@ -119,9 +119,6 @@ export default function Navbar() {
               <a>Guides</a>
             </li>
            </ul>
-                       <li className={styles.li}>
-              <button onClick={signOutNow} className={styles.logout}>Log Out</button>
-            </li>
           </div>
         )}
       <ul className={styles.ulmobile}>
