@@ -34,7 +34,7 @@ export default function Navbar() {
         <h3>Decentra</h3>
       </div>
       <div className={styles.userspace}>
-        <img src={user?.photoURL}></img>
+        <img></img>
         <div>
         <b>${displayName}</b>
         <p>${username}</p>
