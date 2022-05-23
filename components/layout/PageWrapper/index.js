@@ -34,6 +34,7 @@ export default function PageWrapper(props) {
 
       <div className={styles.inner_container}>
         <div className={styles.main_container}>
+        <div className={styles.pageheader}></div>  
         {props.children}
         </div>
       </div>

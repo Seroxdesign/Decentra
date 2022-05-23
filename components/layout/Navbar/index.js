@@ -22,6 +22,40 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
+   <div className={styles.communityexplorer}>
+    <a>💬</a>
+    <a>💸</a>
+    <a>✨</a>
+    <a>✨</a>
+    <a href={`/${username}`}>👥</a>
+    {
+          mobileMenu ? 
+          <button className={styles.mobile_control} onClick={() => {toggleMenu(false)}}>
+            <img src="https://i.imgur.com/DbfV65K.png" alt="close mobile menu"/>
+          </button>
+          :
+          <button className={styles.mobile_control} onClick={() => {toggleMenu(true)}}>
+            <img src="https://i.imgur.com/rhTxXmI.png" alt="open mobile menu"/>
+          </button>
+        }
+    </div>
+   <div className={styles.communityleftbar}>
+      <div className={styles.communityname}>
+        <h3>Decentra</h3>
+      </div>
+      <div className={styles.userspace}>
+        <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg"></img>
+        <div>
+        <b>Daniel</b>
+        <p>{username}</p>
+        </div>
+      </div>
+     <div className={styles.communityinfo}>
+        <a>The all-in-one community platform</a>
+        <div className={styles.communityjoin}>
+          <b>Join community</b>
+        </div>
+      </div>
       <ul className={styles.ul} >
         {/* user is signed-in and has username */}
         {username && (
@@ -102,32 +136,6 @@ export default function Navbar() {
               <a>Guides</a>
             </li>
            </ul>
-            <div className={styles.seperator}/>
-           <ul className={styles.ul_decentra_community}> 
-           <li className={styles.li}>
-              <Link href="/decentra">
-                <div className={styles.link_btn}>
-                  <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg" alt="decentra" />
-                </div>
-              </Link>
-              <a>Decentra</a>
-            </li>
-           </ul>
-           <ul className={styles.ul_joined_communities}> 
-           </ul>
-                       <div className={styles.seperator}/>
-           <ul className={styles.ul_actions}> 
-
-            <li className={styles.li}>
-              <a>Create community</a>
-            </li>
-            <li className={styles.li}>
-              <a>Discover</a>
-            </li>
-           </ul> 
-            <li className={styles.li}>
-              <button onClick={signOutNow} className={styles.logout}>Log Out</button>
-            </li>
           </div>
         )}
       <ul className={styles.ulmobile}>
@@ -170,6 +178,7 @@ export default function Navbar() {
         {/* user is not signed OR has not created username */}
       
       </ul>
+   </div>   
     </nav>
   );
 }
