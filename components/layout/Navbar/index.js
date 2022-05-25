@@ -3,13 +3,14 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useContext } from 'react';
 import { UserContext } from '@lib/context';
-import { auth } from '@lib/firebase';
+import { auth, firestore, serverTimestamp } from '@lib/firebase';
 import { signOut } from 'firebase/auth';
+import toast from 'react-hot-toast';
 import styles from './styles.module.scss'
 
 // Top navbar
 export default function Navbar() {
-  const { username } = useContext(UserContext);
+  const { username, user, member } = useContext(UserContext);
 
   const [mobileMenu, toggleMenu] = useState(false)
   
@@ -18,6 +19,21 @@ export default function Navbar() {
   const signOutNow = () => {
     signOut(auth);
     router.reload();
+  }
+
+  const joinDecentra = async() => {
+    const userCommunityDoc = firestore.doc(`users/${user.uid}/communities/decentra`);
+    const groupDoc = firestore.doc(`community/decentra/members/${user.uid}`);
+    const userDoc = firestore.doc(`users/${user.uid}`)
+
+    const batch = firestore.batch();
+    batch.set(userCommunityDoc, {joinedAt: serverTimestamp(), community: 'Decentra'});
+    batch.set(groupDoc, { uid: user.uid, name: user.displayName, joinedAt: serverTimestamp(), username: username, });
+    batch.update(userDoc, { joinedDecentra: true });
+
+    await batch.commit();
+
+    toast.success('Welcome to Decentra. You have now become a member of our community.')
   }
 
   return (
@@ -46,22 +62,27 @@ export default function Navbar() {
       <div className={styles.userspace}>
         <img src="https://i.ibb.co/8KyXHCk/k-LRh4bm-Y-400x400.jpg"></img>
         <div>
-        <b>Daniel</b>
-        <p>{username}</p>
+        <b>{username}</b>
         </div>
       </div>
      <div className={styles.communityinfo}>
-        <a>The all-in-one community platform</a>
-        <div className={styles.communityjoin}>
-          <b>Join community</b>
-        </div>
+        <b>The all-in-one community platform</b>
+        {
+          member ? 
+          'You are a member'
+          :
+          <div className={styles.communityjoin} onClick={joinDecentra}>
+            <b>Join community</b>
+          </div>
+        }
+      
       </div>
       <ul className={styles.ul} >
         {/* user is signed-in and has username */}
         {username && (
           <div className={ mobileMenu ? styles.mobile_wrap : styles.links}>
           <button onClick={()=> {toggleMenu(false)}} className={styles.close}>Close</button>
-           <ul className={styles.ul_universal}>
+           <div className={styles.ul_universal}>
              {
                username ? 
               <a href="/">
@@ -76,49 +97,52 @@ export default function Navbar() {
               ''
              }
           <a href={`/${username}`}>
-           <li className={styles.li}>
-              <div className={styles.link_btn}>
-                📅
-              </div>
-              <a>Profile</a>
-            </li>
+           <div className={styles.li}>
+              <img src={user.photoURL} className={styles.link_btn}></img>
+              <b>{username}</b>
+            </div>
            </a> 
+
             <div className={styles.category_name}><b>Get Started</b></div>
-            <li className={styles.li}>
+     
               <Link href="/Chat">
-                <div className={styles.link_btn}>
-                   📜
+                <div className={styles.li}>
+                  <div className={styles.link_btn}>
+                    📜
+                  </div>
+                  <p>Chat</p>
                 </div>
-           
               </Link>
-              <a>Chat</a>
-            </li>
-            <li className={styles.li}>
+
               <Link href="/Web3">
-                <div className={styles.link_btn}>
-                  💸
+                <div className={styles.li}>
+                    <div className={styles.link_btn}>
+                      💸
+                    </div>
+                    <p>Wallet</p>
                 </div>
               </Link>
-              <a>Wallet</a>
-            </li>
-            <li className={styles.li}>
+
               <Link href="/announcements">
-                <div className={styles.link_btn}>
-                   📢
+                <div className={styles.li}>
+                    <div className={styles.link_btn}>
+                      📢
+                    </div>
+                    <p>Announcements</p>
                 </div>
               </Link>
-              <a>Announcements</a>
-            </li>
-            <li className={styles.li}>
-              <Link href="/our-team">
-                <div className={styles.link_btn}>
-                   👥
+
+              <Link href="/our-team">   
+                <div className={styles.li}>
+                  <div className={styles.link_btn}>
+                    👥
+                  </div>
+                  <p>Our team</p>
                 </div>
               </Link>
-              <a>Our team</a>
-            </li>
-           </ul>
-            <div className={styles.category_name}><b>Resources</b></div>
+        
+           </div>
+          <div className={styles.category_name}><b>Resources</b></div>
            <ul className={styles.ul_community_specific}>
              <li className={styles.li}>
               <Link href="/blog">

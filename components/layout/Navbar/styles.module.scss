@@ -49,10 +49,14 @@
     flex-direction: column;
   }
   .communityjoin {
-      background: #3d4046;
+     background: #3d4046;
     padding: 10px 15px;
     border-radius: 12px;
     width: max-content;
+    cursor: pointer;
+    &:hover{
+      background-color: #202225;
+    }
   }
   .communityexplorer {
   position: absolute;

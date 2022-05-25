@@ -5,7 +5,6 @@ import ImageUploader from '../../components/layout/ImageUploader';
 import { firestore, auth, serverTimestamp } from '../../lib/firebase';
 import ReactMarkdown from 'react-markdown';
 import { useRouter } from 'next/router';
-import { deleteDoc } from 'firebase/firestore';
 import { useDocumentDataOnce } from 'react-firebase-hooks/firestore';
 import { useForm } from 'react-hook-form'; 
 import Link from 'next/link';

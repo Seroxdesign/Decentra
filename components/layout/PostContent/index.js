@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 // UI component for main post content
 export default function PostContent({ post }) {
   const createdAt = typeof post?.createdAt === 'number' ? new Date(post.createdAt) : post.createdAt.toDate();
-
+ 
   return (
     <div className={styles.card}>   
       <div className={styles.kicker_nav}>Home / Blog / {post?.title}</div>  

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {auth, firestore, serverTimestamp} from '@lib/firebase';
 import { useCollectionData } from 'react-firebase-hooks/firestore';
-import LogOutButton from '@components/simple/LogoutBtn';
-import AuthCheck from '@components/helpers/AuthCheck';
+import AuthCheck from '@components/helpers/AuthCheck'
 import styles from './styles.module.scss';
 
 export default function Chat() {
@@ -33,9 +32,9 @@ export default function Chat() {
     <AuthCheck>
       <div class={styles.mainchat}>
 
-    <main className={styles.main}>
-      {messages && messages.map((msg) => <ChatMessage key={msg.id}  message={msg}/> )}
-    </main>
+      <main className={styles.main}>
+        {messages && messages.map((msg) => <ChatMessage key={msg.id}  message={msg}/> )}
+      </main>
 
       <span></span>
         <form onSubmit={sendMessage} className={styles.form}>
