@@ -1,0 +1,49 @@
+.container{
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+  color: rgba(255, 255, 255, 0.855);
+}
+
+.videos{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  justify-content: space-around;
+  width: 100%;
+
+  video{
+    border: 2px solid rgb(189, 189, 189);
+    min-height: 27vh;
+  }
+}
+
+
+.options{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  button{
+    margin-top: 10px;
+    height: 40px;
+    width: 130px;
+    margin-bottom: 10px;
+    background-color:  #1B9516;
+    border: none;
+    border-radius: 12px;
+    color: white;
+  }
+
+  .hang_up{
+    background-color: red;
+  }
+}
