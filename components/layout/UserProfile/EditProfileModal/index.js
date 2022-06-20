@@ -50,7 +50,7 @@ export default function EditProfileModal({user, handleOnClick}) {
         <hr></hr>
         <div>
           <h4>Banner</h4>
-          <ReactMarkdown>{user?.banner}</ReactMarkdown>
+          <img src={banner} alt={"banner"} className=""></img>
           <ImageUploader placeImage={setBanner}/>
 
           <h4>Profile Picture</h4>

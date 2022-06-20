@@ -8,15 +8,16 @@ export default function PostFeed({posts, admin}) {
   return (
     <div className={styles.long_block}>
       <h2>Feed</h2>
-      { posts ? posts.map((post) => <PostItem post={post} key={post.slug} admin={admin}/>) : null }
+      { posts ? posts.map((post) => <PostItem post={post} banner={post.banner || ''} key={post.slug} admin={admin}/>) : null }
     </div>
   )
 
 }
 
-function PostItem({post, admin = false}) {
+function PostItem({post, admin = false, banner,}) {
   const wordCount = post?.content.trim().split(/\s+/g).length;
 
+  const [imageURL, setImage] = React.useState('');
   const contentPreview = post?.content.trim().split(/\s+/g).map((word, i) => {
     let preview = [];
     if(i < 30 && word.length < 15){
@@ -25,6 +26,13 @@ function PostItem({post, admin = false}) {
     return preview
   })
   
+
+  React.useEffect(() => {
+    if (banner) {
+      setImage(banner);
+    }
+  }, [])
+
   const minutesToRead = (wordCount / 100 + 1).toFixed(0);
 
   return (
@@ -46,11 +54,13 @@ function PostItem({post, admin = false}) {
         </Link>
         <span className={styles.publication_date}>May 13, 2022</span>
         </div>
-          
+                    
+        <img src={`${imageURL}`} alt={"post-banner"}/>
         <Link href={`/${post.username}/${post.slug}`}>
           <h3>
             <a href={`/${post.username}/${post.slug}`}>{post.title}</a>
           </h3>
+
         </Link>
         
         <span className={styles.preview}>

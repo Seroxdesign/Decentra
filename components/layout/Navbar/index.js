@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav className={styles.navbar}>
-   <div className={styles.communityexplorer}>
+   <div className={user ? styles.communityexplorer : styles.invisible}>
     <a>💬</a>
     <a>💸</a>
     <a>✨</a>
@@ -55,7 +55,9 @@ export default function Navbar() {
           </button>
         }
     </div>
-   <div className={styles.communityleftbar}>
+   <div
+    className={user ? styles.communityleftbar : styles.invisible}
+   >
       <div className={styles.communityname}>
         <h3>Decentra</h3>
       </div>

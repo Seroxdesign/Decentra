@@ -39,6 +39,7 @@ export function SignUpForm({handleGoogleSignIn, toggleProcess}) {
   return (
     <div>
       <form onSubmit={handleSubmit} className={styles.form}>
+        <h4>Login</h4>
         <div className={styles.card}>
           <div className={styles.form_collection}>
             <label className={styles.form_label}>
@@ -107,6 +108,7 @@ export function SignInForm({handleGoogleSignIn, toggleProcess}) {
   return (
     <div>
       <form onSubmit={handleSubmit} className={styles.form}>
+      <h4>Login</h4>
         <div className={styles.card}>
           <div className={styles.form_collection}>
             <label className={styles.form_label}>
