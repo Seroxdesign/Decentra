@@ -30,7 +30,7 @@ export default function ImageUploader({placeImage}) {
         .then((url) => {
           setDownloadURL(url);
           setUploading(false);
-          placeImage(`![alt](${url})`)
+          placeImage(`${url}`)
         })
     })
     toast.success('Image uploaded successfully')

@@ -7,20 +7,19 @@ import debounce from 'lodash.debounce';
 import toast from 'react-hot-toast';
 import styles from './styles.module.scss'
 import ImageUploader from '@components/layout/ImageUploader';
-import { WalletEthers } from '@components/helpers/ConnectWallet';
 
 export default function Enter(props) {
   const { user, username } = useContext(UserContext);
+  const router = useRouter();
 
-  // 1. user signed out <SignInButton />
-  // 2. user signed in, but missing username <UsernameForm />
-  // 3. user signed in, has username <SignOutButton />
   return (
-    <main>
+    <main className={styles.container_full}>
       {user ? !username ? <UsernameForm /> 
       : 
       <div className={styles.survey_container}>
-        <SignOutButton />
+        {
+          router.push(`/`)
+        }
       </div>  
       : 
       <SignInButton />}
@@ -43,12 +42,10 @@ function SignInButton() {
     <>
       {signIn? 
         <>
-          <h2 className={styles.header}>Sign Up</h2>
             <SignUpForm handleGoogleSignIn={signInWithGoogle}  toggleProcess={async()=> {await ToggleSignIn(!signIn)}}/>
         </>
         :
         <>
-          <h2  className={styles.header}>Sign In</h2>
           <SignInForm handleGoogleSignIn={signInWithGoogle} toggleProcess={async()=> {await ToggleSignIn(!signIn)}}/>
         </>
       }

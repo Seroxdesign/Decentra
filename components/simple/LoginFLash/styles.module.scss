@@ -1,0 +1,30 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  background-color: #2f3136;
+
+  h3{
+    font-size: x-large;
+    color: rgba(255, 255, 255, 0.795);
+  }
+
+  img{
+    border-radius: 50%;
+    margin-top: 1em;
+  }
+
+  button{
+    height: 40px;
+    width: 100px;
+    border-radius: 12px;
+    margin-top: 2em;
+  }
+}
